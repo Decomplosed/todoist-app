@@ -1,5 +1,3 @@
 import React from 'react';
 
-export const App = () => {
-  return <div className='App'>Hello</div>;
-}
+export const App = () => <div className='App'>Hello</div>;
