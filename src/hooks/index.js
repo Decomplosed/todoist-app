@@ -11,5 +11,18 @@ export const useTasks = (selectedProject) => {
       .firestore()
       .collection('tasks')
       .where('userId', '==', 'Jx3X378u2QjdGeEQdasj');
+
+    unsubscribe =
+      selectedProjects && !collatedTasksExist(selectedProject)
+        ? (unsubscribe = unsubscribe.where('projectId', '==', selectedProject))
+        : selectedProject === 'TODAY'
+        ? (unsubscribe = unsubscribe.where(
+            'date',
+            '==',
+            moment().format('DD/MM/YYYY'),
+          ))
+        : selectedProject === 'INBOX' || selectedProject === 0
+        ? (unsubscribe = unsubscribe.where('date', '==', ''))
+        : unsubscribe;
   }, []);
 };
