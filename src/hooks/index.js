@@ -24,5 +24,5 @@ export const useTasks = (selectedProject) => {
         : selectedProject === 'INBOX' || selectedProject === 0
         ? (unsubscribe = unsubscribe.where('date', '==', ''))
         : unsubscribe;
-  }, []);
+  }, [selectedProject]);
 };
