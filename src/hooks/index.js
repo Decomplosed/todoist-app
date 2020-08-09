@@ -24,5 +24,12 @@ export const useTasks = (selectedProject) => {
         : selectedProject === 'INBOX' || selectedProject === 0
         ? (unsubscribe = unsubscribe.where('date', '==', ''))
         : unsubscribe;
+
+    unsubscribe = unsubscribe.onSnapshot((snapshot) => {
+      const newTasks = snapshot.docs.map((task) => ({
+        id: task.id,
+        ...task.data(),
+      }));
+    });
   }, [selectedProject]);
 };
