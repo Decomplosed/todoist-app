@@ -6,3 +6,5 @@ const firebaseConfig = firebase.initializeApp({
   messageSenderId: '',
   apiId: '',
 });
+
+export { firebaseConfig as firebase };
