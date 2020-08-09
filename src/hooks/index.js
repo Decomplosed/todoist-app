@@ -1,6 +1,15 @@
 import { useState, useEffect } from 'react';
 import { firebase } from '../firebase';
 
-export const useTasks = (selectedProjects) => {
+const collatedTasks = () => {};
+
+export const useTasks = (selectedProject) => {
   const [tasks, setTasks] = useState([]);
+
+  useEffect(() => {
+    let unsubscribe = firebase
+      .firestore()
+      .collection('tasks')
+      .where('userId', '==', 'Jx3X378u2QjdGeEQdasj');
+  }, []);
 };
