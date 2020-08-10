@@ -59,5 +59,6 @@ export const useProjects = () => {
       .firestore()
       .collection('projects')
       .where('userId', '==', 'Jx3X378u2QjdGeEQdasj');
+      .get()
   }, []);
 };
