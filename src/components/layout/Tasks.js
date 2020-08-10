@@ -1,3 +1,5 @@
 import React from 'react';
 
-export const Tasks = () => {};
+export const Tasks = () => {
+  const tasks = [];
+};
