@@ -50,3 +50,5 @@ export const useTasks = (selectedProject) => {
 
   return { tasks, archivedTasks };
 };
+
+export const useProjects = () => {};
