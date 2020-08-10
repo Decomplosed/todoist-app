@@ -53,4 +53,6 @@ export const useTasks = (selectedProject) => {
 
 export const useProjects = () => {
   const [projects, setProjects] = useState([]);
+
+  useEffect(() => {}, []);
 };
