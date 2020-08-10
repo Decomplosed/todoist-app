@@ -47,4 +47,6 @@ export const useTasks = (selectedProject) => {
 
     return () => unsubscribe();
   }, [selectedProject]);
+
+  return { tasks, archivedTasks };
 };
