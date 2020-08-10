@@ -54,5 +54,10 @@ export const useTasks = (selectedProject) => {
 export const useProjects = () => {
   const [projects, setProjects] = useState([]);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    firebase
+      .firestore()
+      .collection('projects')
+      .where('userId', '==', 'Jx3X378u2QjdGeEQdasj');
+  }, []);
 };
