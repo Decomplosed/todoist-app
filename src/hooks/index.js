@@ -52,5 +52,5 @@ export const useTasks = (selectedProject) => {
 };
 
 export const useProjects = () => {
-  const [project, setProject] = useState([]);
+  const [projects, setProjects] = useState([]);
 };
