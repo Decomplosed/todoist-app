@@ -67,5 +67,5 @@ export const useProjects = () => {
           docId: project.id,
         }));
       });
-  }, [project]);
+  }, [projects]);
 };
