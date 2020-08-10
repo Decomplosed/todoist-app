@@ -60,6 +60,12 @@ export const useProjects = () => {
       .collection('projects')
       .where('userId', '==', 'Jx3X378u2QjdGeEQdasj')
       .orderBy('projectId')
-      .get();
+      .get()
+      .then((snapshot) => {
+        const allProjects = snapshot.docs.map((project) => ({
+          ...project.data(),
+          docId: project.id,
+        }));
+      });
   }, []);
 };
