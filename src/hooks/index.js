@@ -72,4 +72,6 @@ export const useProjects = () => {
       setProjects(allProjects);
     }
   }, [projects]);
+
+  return { projects, setProjects };
 };
