@@ -58,7 +58,8 @@ export const useProjects = () => {
     firebase
       .firestore()
       .collection('projects')
-      .where('userId', '==', 'Jx3X378u2QjdGeEQdasj');
-      .get()
+      .where('userId', '==', 'Jx3X378u2QjdGeEQdasj')
+      .orderBy('projectId')
+      .get();
   }, []);
 };
