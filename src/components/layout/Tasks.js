@@ -2,7 +2,7 @@ import React from 'react';
 import { Checkbox } from '../Checkbox';
 
 export const Tasks = () => {
-  const tasks = [];
+  const { tasks } = useTasks(1);
 
   let projectName = '';
 
