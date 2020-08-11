@@ -120,4 +120,8 @@ $generic-bg: #db4c3f;
   }
 }
 
-@mixin mq($from) {}
+@mixin mq($from) {
+  @media (max-width: $from) {
+    @content;
+  }
+}
