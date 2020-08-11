@@ -40,3 +40,5 @@ $generic-bg: #db4c3f;
   top: 85px;
   border-radius: 3px;
 }
+
+@mixin va($va-align: center) {}
