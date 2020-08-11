@@ -114,4 +114,8 @@ $generic-bg: #db4c3f;
   border-bottom: 1px solid #f0f0f0;
   padding-left: 10px;
   cursor: pointer;
+
+  &:hover {
+    background-color: #f9f9f9;
+  }
 }
