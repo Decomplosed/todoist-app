@@ -88,4 +88,9 @@ $generic-bg: #db4c3f;
   cursor: pointer;
 }
 
-@mixin cancel() {}
+@mixin cancel() {
+  color: #555;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 2px 5px;
+}
