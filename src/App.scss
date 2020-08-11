@@ -53,5 +53,9 @@ $generic-bg: #db4c3f;
     -webkit-box-pack: left;
     -ms-flex-pack: left;
     justify-content: left;
+  } @else {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
