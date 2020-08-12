@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
 
+/* General settings
+  ============================================
+*/
+
 html {
   box-sizing: border-box;
 }
@@ -25,12 +29,18 @@ ul {
   padding: 0;
 }
 
-// Variables
+/* Variables
+  ============================================
+*/
+
 $generic-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 4px 11px;
 $generic-border: 1px solid #f1f1f1;
 $generic-bg: #db4c3f;
 
-//Mixins
+/* Mixins
+  ============================================
+*/
+
 @mixin box-overlay() {
   -webkit-box-shadow: $generic-box-shadow;
   box-shadow: $generic-box-shadow;
@@ -125,6 +135,10 @@ $generic-bg: #db4c3f;
     @content;
   }
 }
+
+/* Darkmode
+  ============================================
+*/
 
 .darkmode {
   header {
@@ -235,3 +249,7 @@ header {
     }
   }
 }
+
+/* Sidebar
+  ============================================
+*/
