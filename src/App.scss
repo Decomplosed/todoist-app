@@ -341,4 +341,9 @@ header {
   &__project {
     @include va('left');
   }
+
+  &__dot {
+    margin-right: 10px;
+    font-size: 30px;
+  }
 }
