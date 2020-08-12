@@ -203,6 +203,17 @@ header {
             border-radius: 3px;
             background-color: rgba(255,255,255,0.2);
           }
+
+          &.settings__add {
+            margin-right: 15px;
+            font-size: 30px;
+
+            button {
+              @include transparent-button();
+              color: white;
+              cursor: pointer;
+            }
+          }
         }
       }
     }
