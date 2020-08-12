@@ -9,7 +9,7 @@ import {
 export const Sidebar = () => (
   <div className='sidebar' data-test-id='sidebar'>
     <ul className='sidebar__generic'>
-      <li>
+      <li data-testid='inbox' className='inbox'>
         <span>
           <FaInbox />
         </span>
