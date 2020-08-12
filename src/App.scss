@@ -346,4 +346,15 @@ header {
     margin-right: 10px;
     font-size: 30px;
   }
+
+  &__middle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: $generic-border;
+    padding-left: 10px;
+    cursor: pointer;
+  }
 }
