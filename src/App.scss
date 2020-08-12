@@ -147,4 +147,8 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+
+  @include mq('900px') {
+    padding: 0 10px;
+  }
 }
