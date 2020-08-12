@@ -15,13 +15,13 @@ export const Sidebar = () => (
         </span>
         <span>Inbox</span>
       </li>
-      <li>
+      <li data-testid='today' className='today'>
         <span>
           <FaRegCalendar />
         </span>
         <span>Today</span>
       </li>
-      <li>
+      <li data-testid='next_7' className='next_7'>
         <span>
           <FaRegCalendarAlt />
         </span>
