@@ -356,5 +356,15 @@ header {
     border-bottom: $generic-border;
     padding-left: 10px;
     cursor: pointer;
+
+    span {
+      color: #0000008a;
+      margin-right: 10px;
+
+      svg.hidden-projects {
+        -webkit-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+      }
+    }
   }
 }
