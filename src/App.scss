@@ -388,6 +388,14 @@ header {
       font-size: 15px;
       padding-left: 0;
       padding-right: 0;
+
+      div:nth-child(1) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 10px 0 10px 10px;
+        width: 100%;
+      }
     }
   }
 }
