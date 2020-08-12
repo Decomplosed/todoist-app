@@ -292,5 +292,14 @@ header {
       -ms-flex-align: center;
       align-items: center;
     }
+
+    &-delete {
+      margin-left: auto;
+      display: none;
+
+      svg {
+        color: #cacaca;
+      }
+    }
   }
 }
