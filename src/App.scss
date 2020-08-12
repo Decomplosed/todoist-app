@@ -337,4 +337,8 @@ header {
   &__projects {
     padding-left: 3px;
   }
+
+  &__project {
+    @include va('left');
+  }
 }
