@@ -4,9 +4,11 @@ import { Content } from './components/layout/Content';
 
 import './App.scss';
 
-export const App = () => (
-  <div className='App'>
-    <Header />
-    <Content />
-  </div>
-);
+export const App = () => {
+  return (
+    <div className='App'>
+      <Header />
+      <Content />
+    </div>
+  );
+};
