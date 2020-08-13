@@ -8,10 +8,12 @@ import './App.scss';
 export const App = () => {
   return (
     <SelectedProjectProvider>
-      <div className='App'>
-        <Header />
-        <Content />
-      </div>
+      <ProjectsProvider>
+        <div className='App'>
+          <Header />
+          <Content />
+        </div>
+      </ProjectsProvider>
     </SelectedProjectProvider>
   );
 };
