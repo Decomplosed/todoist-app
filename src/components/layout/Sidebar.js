@@ -8,6 +8,8 @@ import {
 import { useSelectedProjectValue } from '../../context';
 
 export const Sidebar = () => {
+  const { setSelectedProject } = useSelectedProjectValue;
+
   return (
     <div className='sidebar' data-test-id='sidebar'>
       <ul className='sidebar__generic'>
