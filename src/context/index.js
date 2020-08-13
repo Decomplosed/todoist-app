@@ -1,4 +1,7 @@
 import React, { createContext, useContext } from 'react';
 import { useProjects } from '../hooks';
 
-export const ProjectsCOntext = createContext();
+export const ProjectsContext = createContext();
+export const ProjectsProvider = ({children}) => {
+
+}
