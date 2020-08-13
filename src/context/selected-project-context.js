@@ -3,7 +3,7 @@ import { useProjects } from '../hooks';
 
 export const SelectedProjectContext = createContext();
 export const SelectedProjectProvider = ({ children }) => {
-  const { projects, setProjects } = useProjects();
+  const { selectedProject, setSelectedProject } = useProjects();
 
   return (
     <ProjectsContext.Provider value={{ projects, setProjects }}>
