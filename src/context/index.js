@@ -10,4 +10,11 @@ import {
   useSelectedProjectValue,
 } from './selected-project-context';
 
-export { ProjectsContext, ProjectsProvider, useProjectsValue };
+export {
+  ProjectsContext,
+  ProjectsProvider,
+  useProjectsValue,
+  SelectedProjectContext,
+  SelectedProjectProvider,
+  useSelectedProjectValue,
+};
