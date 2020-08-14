@@ -20,6 +20,7 @@ export const Projects = ({ activeValue = true }) => {
         }
         onClick={() => {
           setActive(project.projectId)
+          setSelectedProject(project.projectId)
         }}
       ></li>
     ))
