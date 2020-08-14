@@ -18,5 +18,11 @@ export const IndividualProject = ({ project }) => {
         setProjects([...projects]);
         setSelectedProject('INBOX');
       });
+
+    return (
+      <>
+        <span className='sidebar__dot'>•</span>
+      </>
+    );
   };
 };
