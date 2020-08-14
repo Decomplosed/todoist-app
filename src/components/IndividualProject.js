@@ -31,6 +31,13 @@ export const IndividualProject = ({ project }) => {
           }}
         >
           <FaTrashAlt />
+          {showConfirm && (
+            <div className='project-delete-modal'>
+              <div className='project-delete-modal__inner'>
+                <p>Are you sure you want to delete this project?</p>
+              </div>
+            </div>
+          )}
         </span>
       </>
     );
