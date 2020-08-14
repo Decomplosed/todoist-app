@@ -7,4 +7,15 @@ export const IndividualProject = ({ project }) => {
   const [showConfirm, setShowConfirm] = useState(false);
   const { projects, setProjects } = useProjectsValue();
   const { setSelectedProject } = useSelectedProjectValue();
+
+  const deleteProject = (docId) => {
+    firebase
+      .firestore()
+      .collection('projects')
+      .doc(docId)
+      .delete()
+      .then(() => {
+        setProjects([...projects]);
+      });
+  };
 };
