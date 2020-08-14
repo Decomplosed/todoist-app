@@ -29,7 +29,9 @@ export const IndividualProject = ({ project }) => {
           onClick={() => {
             setShowConfirm(!showConfirm);
           }}
-        ></span>
+        >
+          <FaTrashAlt />
+        </span>
       </>
     );
   };
