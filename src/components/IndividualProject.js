@@ -26,6 +26,9 @@ export const IndividualProject = ({ project }) => {
         <span
           className='sidebar__project-delete'
           data-testid='delete-project'
+          onClick={() => {
+            setShowConfirm(!showConfirm);
+          }}
         ></span>
       </>
     );
