@@ -19,10 +19,12 @@ export const Projects = ({ activeValue = true }) => {
             : 'sidebar__project'
         }
         onClick={() => {
-          setActive(project.projectId)
-          setSelectedProject(project.projectId)
+          setActive(project.projectId);
+          setSelectedProject(project.projectId);
         }}
-      ></li>
+      >
+        {JSON.stringify(project)}
+      </li>
     ))
   );
 };
