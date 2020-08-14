@@ -6,4 +6,5 @@ import { firebase } from '../firebase';
 export const IndividualProject = ({ project }) => {
   const [showConfirm, setShowConfirm] = useState(false);
   const { projects, setProjects } = useProjectsValue();
+  const { setSelectedProject } = useSelectedProjectValue();
 };
