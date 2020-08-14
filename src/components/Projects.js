@@ -7,6 +7,13 @@ export const Projects = ({ activeValue = true }) => {
   const { projects } = useProjectsValue();
 
   return (
-    projects && projects.map((project) => <li key={project.projectId}></li>)
+    projects &&
+    projects.map((project) => (
+      <li
+        key={project.projectId}
+        data-doc-id={project.docId}
+        data-testid='project-action'
+      ></li>
+    ))
   );
 };
