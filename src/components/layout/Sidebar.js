@@ -41,8 +41,8 @@ export const Sidebar = () => {
         </span>
         <h2>Projects</h2>
       </div>
-      <ul className='sidebar__projects'>Projects will be here!</ul>
-      <Projects />
+      <ul className='sidebar__projects'>{showProjects && <Projects />}</ul>
+      {showProjects && <Projects />}
     </div>
   );
 };
