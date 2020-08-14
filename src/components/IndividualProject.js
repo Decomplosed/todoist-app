@@ -16,6 +16,7 @@ export const IndividualProject = ({ project }) => {
       .delete()
       .then(() => {
         setProjects([...projects]);
+        setSelectedProject('INBOX');
       });
   };
 };
