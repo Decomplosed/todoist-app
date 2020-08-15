@@ -448,5 +448,9 @@ header {
       font-weight: normal;
       font-size: 15px;
     }
+
+    button {
+      @include btn('50px')
+    }
   }
 }
