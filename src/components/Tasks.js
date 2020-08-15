@@ -16,6 +16,10 @@ export const Tasks = () => {
     projectName = getTitle(projects, selectedProject).name;
   }
 
+  if (collatedTasksExist(selectedProject) && selectedProject) {
+    projectName = getCollatedTitle(collatedTasks, selectedProject).name;
+  }
+
   return (
     <div className='tasks' data-testid='tasks'>
       <h2 data-testid='project-name'>{projectName}</h2>
