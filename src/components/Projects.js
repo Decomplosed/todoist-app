@@ -24,7 +24,7 @@ export const Projects = ({ activeValue = true }) => {
           setSelectedProject(project.projectId);
         }}
       >
-        {project.name}
+        <IndividualProject />
       </li>
     ))
   );
