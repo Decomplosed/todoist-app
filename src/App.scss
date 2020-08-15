@@ -452,5 +452,9 @@ header {
     button {
       @include btn('50px')
     }
+
+    span {
+      @include cancel();
+    }
   }
 }
