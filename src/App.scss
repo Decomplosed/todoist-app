@@ -470,3 +470,17 @@ header {
   max-width: 922px;
   margin: auto;
 }
+
+/* Tasks
+  ============================================
+*/
+
+.tasks {
+  width: 656px;
+  background-color: #fff;
+  margin-left: 266px;
+  border-right: $generic-border;
+  min-height: calc(100vh);
+  vertical-align: top;
+  padding: 80px 40px 84px;
+}
