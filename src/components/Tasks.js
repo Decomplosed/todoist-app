@@ -1,6 +1,7 @@
 import React from 'react';
 import { Checkbox } from './Checkbox';
 import { useTasks } from '../hooks';
+import { collatedTasks } from '../constants';
 
 export const Tasks = () => {
   const { tasks } = useTasks('1');
