@@ -3,6 +3,7 @@ import { Checkbox } from './Checkbox';
 import { useTasks } from '../hooks';
 import { collatedTasks } from '../constants';
 import { getTitle, getCollatedTitle, collatedTasksExist } from '../helpers';
+import { useTasks } from '../hooks';
 
 export const Tasks = () => {
   const { tasks } = useTasks('1');
