@@ -43,7 +43,7 @@ export const Sidebar = () => {
         <h2>Projects</h2>
       </div>
       <ul className='sidebar__projects'>{showProjects && <Projects />}</ul>
-      {showProjects && <Projects />}
+      {showProjects && <AddProject />}
     </div>
   );
 };
