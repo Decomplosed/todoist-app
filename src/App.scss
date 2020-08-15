@@ -498,4 +498,15 @@ header {
   .add-task {
     margin-top: 20px;
   }
+
+  &__list li {
+    display: flex;
+    line-height: 18px;
+    color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    list-style-type: none;
+    border-bottom: 1px solid #f0f0f0;
+  }
 }
