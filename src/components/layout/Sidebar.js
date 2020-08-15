@@ -6,6 +6,7 @@ import {
   FaRegCalendar,
 } from 'react-icons/fa';
 import { Projects } from '../Projects';
+import { AddProject } from './AddProject';
 import { useSelectedProjectValue } from '../../context';
 
 export const Sidebar = () => {
