@@ -483,4 +483,9 @@ header {
   min-height: calc(100vh);
   vertical-align: top;
   padding: 80px 40px 84px;
+
+  @include mq('900px') {
+    margin-left: 0;
+    width: auto;
+  }
 }
