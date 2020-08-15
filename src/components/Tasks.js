@@ -6,7 +6,7 @@ import { getTitle, getCollatedTitle, collatedTasksExist } from '../helpers';
 import { useSelectedProjectValue, useProjectsValue } from '../context';
 
 export const Tasks = () => {
-  const { tasks } = useTasks('1');
+  const { tasks } = useTasks(selectedProject);
 
   let projectName = '';
 
