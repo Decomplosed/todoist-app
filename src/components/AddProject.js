@@ -6,4 +6,6 @@ import { useProjectsValue } from '../context';
 export const AddProject = ({ shouldShow = false }) => {
   const [show, setShow] = useState(shouldShow);
   const [projectName, setProjectName] = useState('');
+
+  const projectId = generatePushId()
 };
