@@ -21,4 +21,10 @@ export const AddProject = ({ shouldShow = false }) => {
         setProjectName('');
         setShow(false);
       });
+
+  return (
+    <div className='add-project' data-testid='add-project'>
+      {}
+    </div>
+  );
 };
