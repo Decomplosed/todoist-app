@@ -43,7 +43,14 @@ export const Sidebar = () => {
           </span>
           <span>Today</span>
         </li>
-        <li data-testid='next_7' className='next_7'>
+        <li
+          data-testid='next_7'
+          className='next_7'
+          onClick={() => {
+            setActive('next_7');
+            setSelectedProject('NEXT_7');
+          }}
+        >
           <span>
             <FaRegCalendarAlt />
           </span>
