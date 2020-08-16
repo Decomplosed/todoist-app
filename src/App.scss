@@ -272,6 +272,8 @@ header {
   li {
     padding-left: 10px;
     padding-right: 15px;
+    padding-bottom: 8px;
+    padding-top: 8px;
 
     &:hover .sidebar__project-delete {
       display: -webkit-box;
@@ -391,7 +393,6 @@ header {
       cursor: pointer;
       line-height: 1.50;
       font-size: 15px;
-      margin-bottom: 15px;
 
       span:first-of-type {
         margin-right: 10px;
