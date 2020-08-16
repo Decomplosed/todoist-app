@@ -559,4 +559,8 @@ header {
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  &__submit {
+    @include btn('100px');
+  }
 }
