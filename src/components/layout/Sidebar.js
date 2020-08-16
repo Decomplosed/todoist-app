@@ -17,7 +17,14 @@ export const Sidebar = () => {
   return (
     <div className='sidebar' data-test-id='sidebar'>
       <ul className='sidebar__generic'>
-        <li data-testid='inbox' className='inbox'>
+        <li
+          data-testid='inbox'
+          className='inbox'
+          onClick={() => {
+            setActive('inbox');
+            setSelectedProject('INBOX');
+          }}
+        >
           <span>
             <FaInbox />
           </span>
