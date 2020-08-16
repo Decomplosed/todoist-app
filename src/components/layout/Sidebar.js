@@ -32,7 +32,7 @@ export const Sidebar = () => {
         </li>
         <li
           data-testid='today'
-          className='today'
+          className={active === 'today' ? 'active' : undefined}
           onClick={() => {
             setActive('today');
             setSelectedProject('TODAY');
