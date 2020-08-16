@@ -563,4 +563,8 @@ header {
   &__submit {
     @include btn('100px');
   }
+
+  &__cancel {
+    @include cancel();
+  }
 }
