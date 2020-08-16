@@ -34,6 +34,13 @@ export const AddProject = ({ shouldShow = false }) => {
             type='text'
             placeholder='Name your project...'
           />
+          <button
+            className='add-project__submit'
+            type='button'
+            onClick={() => addProject()}
+          >
+            Add Project
+          </button>
         </div>
       )}
     </div>
