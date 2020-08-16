@@ -9,4 +9,16 @@ export const AddProject = ({ shouldShow = false }) => {
 
   const projectId = generatePushId();
   const { setProjects } = useProjectsValue();
+
+  const addProject = () =>
+    projectName &&
+    firebase
+      .firestore()
+      .collection('projects')
+      .add({ projectId, name: projectName, userId: 'Jx3X378u2QjdGeEQdasj' })
+      .then(() => {
+        setProjects([]);
+        setProjectName('');
+        setShow(false);
+      });
 };
