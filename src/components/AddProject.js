@@ -24,7 +24,18 @@ export const AddProject = ({ shouldShow = false }) => {
 
   return (
     <div className='add-project' data-testid='add-project'>
-      {}
+      {show && (
+        <div className='add-project__input'>
+          <input
+            value={projectName}
+            onChange={(e) => setProjectName(e.target.value)}
+            className='add-project__name'
+            data-testid='project-name'
+            type='text'
+            placeholder='Name your project...'
+          />
+        </div>
+      )}
     </div>
   );
 };
