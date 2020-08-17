@@ -20,6 +20,8 @@ export const AddTask = ({ showAddTaskMain = true, showShouldMain = false }) => {
 
     if (projectId === 'TODAY') {
       collatedDate = moment().format('DD/MM/YYYY');
+    } else if (projectId === 'NEXT_7') {
+      collatedDate = moment().add(7, 'days').format('DD/MM/YYYY');
     }
   };
 };
