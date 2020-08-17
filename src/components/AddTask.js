@@ -7,4 +7,5 @@ import { useSelectedProjectValue } from '../context';
 export const AddTask = ({ showAddTaskMain = true, showShouldMain = false }) => {
   const [task, setTask] = useState('');
   const [taskDate, setTaskDate] = useState('');
+  const [project, setProject] = useState('');
 };
