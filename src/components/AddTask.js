@@ -45,4 +45,10 @@ export const AddTask = ({ showAddTaskMain = true, showShouldMain = false }) => {
         })
     );
   };
+
+  return (
+    <div
+      className={showQuickAddTask ? 'add-task add-task__overlay' : 'add-task'}
+    ></div>
+  );
 };
