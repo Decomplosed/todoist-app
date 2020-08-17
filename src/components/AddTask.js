@@ -50,6 +50,10 @@ export const AddTask = ({ showAddTaskMain = true, showShouldMain = false }) => {
     <div
       className={showQuickAddTask ? 'add-task add-task__overlay' : 'add-task'}
       data-testid='add-task-comp'
-    ></div>
+    >
+      {showAddTaskMain && (
+        <div className='add-task__shallow' data-testid='show-main-action'></div>
+      )}
+    </div>
   );
 };
