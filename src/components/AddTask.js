@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
-import { FaRegListAlt, FaRegCalendarAlt } from 'react-icon/fa';
+import { FaRegListAlt, FaRegCalendarAlt } from 'react-icons/fa';
 import moment from 'moment';
 import { firebase } from '../firebase';
 import { useSelectedProjectValue } from '../context';
 
-export const AddTask = ({ showAddTaskMain = true, showShouldMain = false }) => {
+export const AddTask = ({
+  showAddTaskMain = true,
+  showShouldMain = false,
+  showQuickAddTask,
+  setshowQuickAddTask,
+}) => {
   const [task, setTask] = useState('');
   const [taskDate, setTaskDate] = useState('');
   const [project, setProject] = useState('');
