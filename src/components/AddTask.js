@@ -37,7 +37,12 @@ export const AddTask = ({ showAddTaskMain = true, showShouldMain = false }) => {
           date: collatedDate || taskDate,
           userId: 'Jx3X378u2QjdGeEQdasj',
         })
-        .then(() => {})
+        .then(() => {
+          setTask('');
+          setProject('');
+          setShowMain('');
+          setshowProjectOverlay(false);
+        })
     );
   };
 };
