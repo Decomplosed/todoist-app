@@ -66,6 +66,10 @@ export const AddTask = ({
           <span className='add-task__text'>Add Task</span>
         </div>
       )}
+
+      {(showMain || showQuickAddTask) && (
+        <div className='add-tak__main' data-testid='add-task-main'></div>
+      )}
     </div>
   );
 };
