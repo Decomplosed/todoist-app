@@ -87,6 +87,15 @@ export const AddTask = ({
               </div>
             </>
           )}
+          <p>Project overlay here</p>
+          <p>TaskDate here</p>
+          <input
+            type='text'
+            className='add-task__content'
+            data-testid='add-task-content'
+            value={task}
+            onChange={(e) => setTask(e.target.value)}
+          />
         </div>
       )}
     </div>
