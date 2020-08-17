@@ -16,5 +16,10 @@ export const AddTask = ({ showAddTaskMain = true, showShouldMain = false }) => {
 
   const addTask = () => {
     const projectId = project || selectedProject;
+    let collatedDate = '';
+
+    if (projectId === 'TODAY') {
+      collatedDate = moment().format('DD/MM/YYYY');
+    }
   };
 };
