@@ -10,4 +10,5 @@ export const AddTask = ({ showAddTaskMain = true, showShouldMain = false }) => {
   const [project, setProject] = useState('');
   const [showMain, setShowMain] = useState(showShouldMain);
   const [showProjectOverlay, setshowProjectOverlay] = useState(false);
+  const [showTaskDate, setshowTaskDate] = useState(false);
 };
