@@ -4,6 +4,6 @@ import moment from 'moment';
 import { firebase } from '../firebase';
 import { useSelectedProjectValue } from '../context';
 
-export const AddTask = ({ showAddTaskMain = true, showShouldMain = false }) => (
-  <p>Add Task</p>
-);
+export const AddTask = ({ showAddTaskMain = true, showShouldMain = false }) => {
+  const [task, setTask] = useState('');
+};
