@@ -15,6 +15,6 @@ export const AddTask = ({ showAddTaskMain = true, showShouldMain = false }) => {
   const { selectedProject } = useSelectedProjectValue();
 
   const addTask = () => {
-
+    const projectId = project || selectedProject;
   };
 };
