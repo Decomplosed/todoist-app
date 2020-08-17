@@ -8,5 +8,5 @@ export const AddTask = ({ showAddTaskMain = true, showShouldMain = false }) => {
   const [task, setTask] = useState('');
   const [taskDate, setTaskDate] = useState('');
   const [project, setProject] = useState('');
-  const [showMain, setShowMain] = useState('');
+  const [showMain, setShowMain] = useState(showShouldMain);
 };
