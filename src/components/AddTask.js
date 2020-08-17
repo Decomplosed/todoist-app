@@ -96,6 +96,14 @@ export const AddTask = ({
             value={task}
             onChange={(e) => setTask(e.target.value)}
           />
+          <button
+            type='button'
+            className='add-task__submit'
+            data-testid='add-task'
+            onClick={() => addTask()}
+          >
+            Add Task
+          </button>
         </div>
       )}
     </div>
