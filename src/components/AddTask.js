@@ -23,5 +23,21 @@ export const AddTask = ({ showAddTaskMain = true, showShouldMain = false }) => {
     } else if (projectId === 'NEXT_7') {
       collatedDate = moment().add(7, 'days').format('DD/MM/YYYY');
     }
+
+    return (
+      task &&
+      projectId &&
+      firebase
+        .firestore()
+        .collection('tasks')
+        .add({
+          archived: false,
+          projectId,
+          task,
+          date: collatedDate || taskDate,
+          userId: 'Jx3X378u2QjdGeEQdasj',
+        })
+        .then(() => {})
+    );
   };
 };
