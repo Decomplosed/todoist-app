@@ -68,7 +68,26 @@ export const AddTask = ({
       )}
 
       {(showMain || showQuickAddTask) && (
-        <div className='add-tak__main' data-testid='add-task-main'></div>
+        <div className='add-tak__main' data-testid='add-task-main'>
+          {showQuickAddTask && (
+            <>
+              <div data-testid='quick-add-task'>
+                <h2 className='header'>Quick Add Task</h2>
+                <span
+                  className='add-task__cancel-x'
+                  data-testid='att-task-quick-cancel'
+                  onClick={() => {
+                    setShowMain(false);
+                    setshowProjectOverlay(false);
+                    setshowQuickAddTask(false);
+                  }}
+                >
+                  x
+                </span>
+              </div>
+            </>
+          )}
+        </div>
       )}
     </div>
   );
