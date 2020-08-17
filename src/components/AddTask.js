@@ -56,7 +56,10 @@ export const AddTask = ({ showAddTaskMain = true, showShouldMain = false }) => {
           className='add-task__shallow'
           data-testid='show-main-action'
           onClick={() => setShowMain(!showMain)}
-        ></div>
+        >
+          <span className='add-task__plus'>+</span>
+          <span className='add-task__text'>Add Task</span>
+        </div>
       )}
     </div>
   );
