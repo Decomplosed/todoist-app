@@ -599,6 +599,10 @@ header {
     color: gray;
     margin: 20px 10px;
   }
+
+  &__project {
+    margin-right: 0;
+  }
 }
 
 .add-task__plus, .add-project__plus {
