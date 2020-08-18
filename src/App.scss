@@ -592,6 +592,13 @@ header {
   &__main {
     position: relative;
   }
+
+  &__project, &__date {
+    cursor: pointer;
+    float: right;
+    color: gray;
+    margin: 20px 10px;
+  }
 }
 
 .add-task__plus, .add-project__plus {
