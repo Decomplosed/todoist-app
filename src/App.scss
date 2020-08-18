@@ -687,6 +687,11 @@ header {
 .project-overlay {
   @include box-overlay();
   background-color: white;
+
+  @include mq('900px') {
+    width: 200px;
+    right: 0;
+  }
 }
 
 
