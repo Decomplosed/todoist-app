@@ -571,6 +571,12 @@ header {
       padding: 20px 30px;
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
+
+      .header {
+        font-size: 13px;
+        margin-bottom: 20px;
+        float: left;
+      }
     }
   }
 }
