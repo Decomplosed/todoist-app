@@ -621,6 +621,10 @@ header {
   &__cancel {
     @include cancel();
   }
+
+  &__submit {
+    @include btn('90px');
+  }
 }
 
 .add-task__plus, .add-project__plus {
