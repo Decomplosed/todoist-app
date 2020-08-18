@@ -541,6 +541,22 @@ header {
   ============================================
 */
 
+.add-task {
+  &__overlay {
+    background: rgba(102,102,102,0.5);
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    -webkit-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+    height: calc(100vh);
+  }
+}
+
 .add-task__plus, .add-project__plus {
   color: #dd4b39;
   font-size: 18px;
