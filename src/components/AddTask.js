@@ -123,6 +123,11 @@ export const AddTask = ({
           >
             <FaRegListAlt />
           </span>
+          <span
+            className='add-task__date'
+            data-testid='show-task-date-overlay'
+            onClick={() => setshowProjectOverlay(!showTaskDate)}
+          ></span>
         </div>
       )}
     </div>
