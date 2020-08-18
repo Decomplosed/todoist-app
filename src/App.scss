@@ -588,6 +588,10 @@ header {
       margin-top: 10px;
     }
   }
+
+  &__main {
+    position: relative;
+  }
 }
 
 .add-task__plus, .add-project__plus {
