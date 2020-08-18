@@ -112,7 +112,9 @@ export const AddTask = ({
                 setShowMain(false);
                 setshowProjectOverlay(false);
               }}
-            ></span>
+            >
+              Cancel
+            </span>
           )}
         </div>
       )}
