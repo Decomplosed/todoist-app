@@ -5,4 +5,6 @@ export const ProjectOverlay = ({
   setProject,
   showProjectOverlay,
   setShowProjectOverlay,
-}) => {};
+}) => {
+  const { projects } = useProjectsValue();
+};
