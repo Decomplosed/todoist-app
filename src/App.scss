@@ -578,6 +578,15 @@ header {
         float: left;
       }
     }
+
+    .add-task__cancel-x {
+      cursor: pointer;
+      color: gray;
+      float: right;
+      font-weight: bold;
+      font-size: 12px;
+      margin-top: 10px;
+    }
   }
 }
 
