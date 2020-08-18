@@ -680,6 +680,16 @@ header {
   }
 }
 
+/* Project Overlay
+  ============================================
+*/
+
+.project-overlay {
+  @include box-overlay();
+  background-color: white;
+}
+
+
 /* Add Project
   ============================================
 */
