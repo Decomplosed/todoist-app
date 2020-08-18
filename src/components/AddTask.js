@@ -108,6 +108,10 @@ export const AddTask = ({
             <span
               className='add-task-cancel'
               data-testid='add-task-main-cancel'
+              onClick={() => {
+                setShowMain(false);
+                setshowProjectOverlay(false);
+              }}
             ></span>
           )}
         </div>
