@@ -1,4 +1,8 @@
 import React from 'react';
 import { useProjectsValue } from '../context';
 
-export const ProjectOverlay = () => {};
+export const ProjectOverlay = ({
+  setProject,
+  showProjectOverlay,
+  setShowProjectOverlay,
+}) => {};
