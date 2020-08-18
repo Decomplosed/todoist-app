@@ -645,6 +645,17 @@ header {
   margin-left: 15px;
 }
 
+/* Task date
+  ============================================
+*/
+
+.task-date {
+  @include box-overlay();
+  background-color: #fff;
+  width: 200px;
+  right: 0;
+}
+
 /* Add Project
   ============================================
 */
