@@ -613,6 +613,10 @@ header {
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  &__cancel, &__submit {
+    @include no-select;
+  }
 }
 
 .add-task__plus, .add-project__plus {
