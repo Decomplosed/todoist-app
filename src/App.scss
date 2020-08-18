@@ -617,6 +617,10 @@ header {
   &__cancel, &__submit {
     @include no-select;
   }
+
+  &__cancel {
+    @include cancel();
+  }
 }
 
 .add-task__plus, .add-project__plus {
