@@ -19,6 +19,7 @@ export const ProjectOverlay = ({
               data-testid='project-overlay-action'
               onClick={() => {
                 setProject(project.projectId);
+                setShowProjectOverlay(false);
               }}
             ></li>
           ))}
