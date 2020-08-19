@@ -11,7 +11,9 @@ export const ProjectOverlay = ({
   return (
     projects &&
     showProjectOverlay && (
-      <div className='project-overlay' data-testid='project-overlay'></div>
+      <div className='project-overlay' data-testid='project-overlay'>
+        <ul className='project-overlay__list'></ul>
+      </div>
     )
   );
 };
