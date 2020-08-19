@@ -21,7 +21,9 @@ export const ProjectOverlay = ({
                 setProject(project.projectId);
                 setShowProjectOverlay(false);
               }}
-            ></li>
+            >
+              {project.name}
+            </li>
           ))}
         </ul>
       </div>
