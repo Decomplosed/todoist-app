@@ -17,6 +17,9 @@ export const ProjectOverlay = ({
             <li
               key={project.projectId}
               data-testid='project-overlay-action'
+              onClick={() => {
+
+              }}
             ></li>
           ))}
         </ul>
