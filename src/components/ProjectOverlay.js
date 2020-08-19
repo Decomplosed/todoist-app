@@ -7,4 +7,11 @@ export const ProjectOverlay = ({
   setShowProjectOverlay,
 }) => {
   const { projects } = useProjectsValue();
+
+  return (
+    projects &&
+    showProjectOverlay && (
+      <div className='project-overlay' data-testid='project-overlay'></div>
+    )
+  );
 };
