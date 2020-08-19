@@ -14,7 +14,7 @@ export const ProjectOverlay = ({
       <div className='project-overlay' data-testid='project-overlay'>
         <ul className='project-overlay__list'>
           {projects.map(project => (
-            <li></li>
+            <li key={project.projectId}></li>
           ))}
         </ul>
       </div>
