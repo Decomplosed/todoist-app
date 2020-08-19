@@ -88,7 +88,7 @@ export const AddTask = ({
               </div>
             </>
           )}
-          <p>Project overlay here</p>
+          <ProjectOverlay />
           <p>TaskDate here</p>
           <input
             type='text'
