@@ -12,7 +12,9 @@ export const ProjectOverlay = ({
     projects &&
     showProjectOverlay && (
       <div className='project-overlay' data-testid='project-overlay'>
-        <ul className='project-overlay__list'></ul>
+        <ul className='project-overlay__list'>
+          {projects.map(project => ())}
+        </ul>
       </div>
     )
   );
