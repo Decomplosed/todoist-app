@@ -11,6 +11,7 @@ export const TaskDate = ({ setTaskDate, showTaskDate, setShowTaskDate }) =>
             setShowTaskDate(false);
             setTaskDate(moment().format('DD/MM/YYYY'));
           }}
+          data-testid='task-date-overlay'
         >
           <span>
             <FaSpaceShuttle />
@@ -22,6 +23,7 @@ export const TaskDate = ({ setTaskDate, showTaskDate, setShowTaskDate }) =>
             setShowTaskDate(false);
             setTaskDate(moment().add(1, 'day').format('DD/MM/YYYY'));
           }}
+          data-testid='task-date-overlay'
         >
           <span>
             <FaSpaceShuttle />
