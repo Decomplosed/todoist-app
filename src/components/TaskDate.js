@@ -26,8 +26,8 @@ export const TaskDate = ({ setTaskDate, showTaskDate, setShowTaskDate }) =>
           data-testid='task-date-tomorrow'
         >
           <span>
-            <FaSpaceShuttle />
-            <span>Today</span>
+            <FaSun />
+            <span>Tomorrow</span>
           </span>
         </li>
       </ul>
