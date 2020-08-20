@@ -30,6 +30,18 @@ export const TaskDate = ({ setTaskDate, showTaskDate, setShowTaskDate }) =>
             <span>Tomorrow</span>
           </span>
         </li>
+        <li
+          onClick={() => {
+            setShowTaskDate(false);
+            setTaskDate(moment().add(7, 'days').format('DD/MM/YYYY'));
+          }}
+          data-testid='task-date-next-week'
+        >
+          <span>
+            <FaRegPaperPlane />
+            <span>Next week</span>
+          </span>
+        </li>
       </ul>
     </div>
   );
