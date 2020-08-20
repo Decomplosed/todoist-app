@@ -11,10 +11,13 @@ export const App = ({ darkModeDefault = false }) => {
   return (
     <SelectedProjectProvider>
       <ProjectsProvider>
-        <div className='App'>
+        <main
+          data-testid='application'
+          className={darkMode ? 'darkmode' : undefined}
+        >
           <Header />
           <Content />
-        </div>
+        </main>
       </ProjectsProvider>
     </SelectedProjectProvider>
   );
