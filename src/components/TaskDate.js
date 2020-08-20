@@ -13,6 +13,7 @@ export const TaskDate = ({ setTaskDate, showTaskDate, setShowTaskDate }) =>
         >
           <span>
             <FaSpaceShuttle />
+            <span>Today</span>
           </span>
         </li>
       </ul>
