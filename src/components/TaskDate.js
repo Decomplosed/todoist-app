@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaSpaceShuttle } from 'react-icons/fa';
 
 export const TaskDate = ({ setTaskDate, showTaskDate, setShowTaskDate }) =>
   showTaskDate && (
