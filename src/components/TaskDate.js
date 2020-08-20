@@ -7,7 +7,7 @@ export const TaskDate = ({ setTaskDate, showTaskDate, setShowTaskDate }) =>
         <li
           onClick={() => {
             setShowTaskDate(false);
-            setTaskDate();
+            setTaskDate(moment().format('DD/MM/YYYY'));
           }}
         ></li>
       </ul>
