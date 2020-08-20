@@ -6,6 +6,8 @@ import { ProjectsProvider, SelectedProjectProvider } from './context';
 import './App.scss';
 
 export const App = ({ darkModeDefault = false }) => {
+  const [darkMode, setDarkMode] = useState(darkModeDefault);
+
   return (
     <SelectedProjectProvider>
       <ProjectsProvider>
