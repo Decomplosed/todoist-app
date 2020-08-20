@@ -16,8 +16,8 @@ export const TaskDate = ({ setTaskDate, showTaskDate, setShowTaskDate }) =>
           >
             <span>
               <FaSpaceShuttle />
-              <span>Today</span>
             </span>
+            <span>Today</span>
           </div>
         </li>
         <li>
@@ -30,8 +30,8 @@ export const TaskDate = ({ setTaskDate, showTaskDate, setShowTaskDate }) =>
           >
             <span>
               <FaSun />
-              <span>Tomorrow</span>
             </span>
+            <span>Tomorrow</span>
           </div>
         </li>
         <li>
@@ -44,8 +44,8 @@ export const TaskDate = ({ setTaskDate, showTaskDate, setShowTaskDate }) =>
           >
             <span>
               <FaRegPaperPlane />
-              <span>Next week</span>
             </span>
+            <span>Next week</span>
           </div>
         </li>
       </ul>
