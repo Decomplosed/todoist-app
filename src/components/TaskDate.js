@@ -17,6 +17,17 @@ export const TaskDate = ({ setTaskDate, showTaskDate, setShowTaskDate }) =>
             <span>Today</span>
           </span>
         </li>
+        <li
+          onClick={() => {
+            setShowTaskDate(false);
+            setTaskDate(moment().add(1, 'day').format('DD/MM/YYYY'));
+          }}
+        >
+          <span>
+            <FaSpaceShuttle />
+            <span>Today</span>
+          </span>
+        </li>
       </ul>
     </div>
   );
