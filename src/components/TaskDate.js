@@ -5,6 +5,7 @@ export const TaskDate = ({ setTaskDate, showTaskDate, setShowTaskDate }) => show
     <ul className="task-date__list">
       <li onClick={
         setShowTaskDate(false)
+        setTaskDate()
       }></li>
     </ul>
   </div>
