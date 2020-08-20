@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaPizzaSlice } from 'react-icons/fa';
 
-export const Header = () => {
+export const Header = ({ darkMode, setDarkMode }) => {
   return (
     <header className='header' data-testid='header'>
       <nav>
