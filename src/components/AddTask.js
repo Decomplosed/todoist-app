@@ -97,7 +97,7 @@ export const AddTask = ({
           <TaskDate
             setTaskDate={setTaskDate}
             showTaskDate={showTaskDate}
-            setshowTaskDate={setshowTaskDate}
+            setShowTaskDate={setShowTaskDate}
           />
           <input
             type='text'
