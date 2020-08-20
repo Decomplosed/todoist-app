@@ -5,7 +5,7 @@ import { ProjectsProvider, SelectedProjectProvider } from './context';
 
 import './App.scss';
 
-export const App = () => {
+export const App = ({ darkModeDefault = false }) => {
   return (
     <SelectedProjectProvider>
       <ProjectsProvider>
