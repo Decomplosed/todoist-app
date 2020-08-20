@@ -94,7 +94,11 @@ export const AddTask = ({
             showProjectOverlay={showProjectOverlay}
             setShowProjectOverlay={setshowProjectOverlay}
           />
-          <TaskDate setTaskDate={setTaskDate} showTaskDate={showTaskDate} />
+          <TaskDate
+            setTaskDate={setTaskDate}
+            showTaskDate={showTaskDate}
+            setshowTaskDate={setshowTaskDate}
+          />
           <input
             type='text'
             className='add-task__content'
