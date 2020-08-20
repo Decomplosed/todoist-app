@@ -1,6 +1,6 @@
 import React from 'react';
 import moment from 'moment';
-import { FaSpaceShuttle } from 'react-icons/fa';
+import { FaSpaceShuttle, FaSun } from 'react-icons/fa';
 
 export const TaskDate = ({ setTaskDate, showTaskDate, setShowTaskDate }) =>
   showTaskDate && (
