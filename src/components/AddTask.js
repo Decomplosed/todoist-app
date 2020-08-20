@@ -94,7 +94,7 @@ export const AddTask = ({
             showProjectOverlay={showProjectOverlay}
             setShowProjectOverlay={setshowProjectOverlay}
           />
-          <p>TaskDate here</p>
+          <TaskDate />
           <input
             type='text'
             className='add-task__content'
