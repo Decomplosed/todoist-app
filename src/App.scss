@@ -152,6 +152,27 @@ $generic-bg: #db4c3f;
 
   .sidebar {
     background-color: #38393a;
+
+    &__generic {
+      li, svg {
+        color: #fefefe;
+      }
+
+      .active, li:hover {
+        color: #333;
+      }
+    }
+  }
+
+  .tasks {
+    background-color: #38393a;
+    color: #fefefe;
+
+    &__list {
+      li {
+        
+      }
+    }
   }
 }
 
