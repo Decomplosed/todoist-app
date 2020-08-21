@@ -160,6 +160,11 @@ export const AddTask = ({
             className='add-task__project'
             data-testid='show-project-overlay'
             onClick={() => setShowProjectOverlay(!showProjectOverlay)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') setShowProjectOverlay(!showProjectOverlay);
+            }}
+            tabIndex={0}
+            role='button'
           >
             <FaRegListAlt />
           </span>
@@ -167,6 +172,11 @@ export const AddTask = ({
             className='add-task__date'
             data-testid='show-task-date-overlay'
             onClick={() => setShowTaskDate(!showTaskDate)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') setShowTaskDate(!showTaskDate);
+            }}
+            tabIndex={0}
+            role='button'
           >
             <FaRegCalendarAlt />
           </span>
