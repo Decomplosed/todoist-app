@@ -162,6 +162,12 @@ $generic-bg: #db4c3f;
         color: #333;
       }
     }
+
+    &__middle {
+      h2, span {
+        color: #fefefe;
+      }
+    }
   }
 
   .tasks {
