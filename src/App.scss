@@ -1,15 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
 
-/* General settings
-  ============================================
-*/
-
+// General Settings
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-
 *, *:before, *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
@@ -20,7 +18,7 @@ body {
   color: #202020;
   background-color: #fafafa;
   font-smooth: always;
-  -webkit-font-smoothing: antialised;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -29,21 +27,16 @@ ul {
   padding: 0;
 }
 
-/* Variables
-  ============================================
-*/
-
+// Variables
 $generic-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 4px 11px;
 $generic-border: 1px solid #f1f1f1;
 $generic-bg: #db4c3f;
 
 /* Mixins
-  ============================================
-*/
-
+  ============================================ */
 @mixin box-overlay() {
   -webkit-box-shadow: $generic-box-shadow;
-  box-shadow: $generic-box-shadow;
+          box-shadow: $generic-box-shadow;
   position: absolute;
   width: 100%;
   z-index: 1;
@@ -56,17 +49,17 @@ $generic-bg: #db4c3f;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   @if $va-align != center {
     -webkit-box-pack: left;
-    -ms-flex-pack: left;
-    justify-content: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   } @else {
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -137,55 +130,18 @@ $generic-bg: #db4c3f;
 }
 
 /* Darkmode
-  ============================================
-*/
-
+  ============================================ */
 .darkmode {
-  background-color: #333;
-  color: #fefefe;
   header {
     -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
     box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);
     background-color: #282828;
     border-color: transparent;
   }
-
-  .sidebar {
-    background-color: #38393a;
-
-    &__generic {
-      li, svg {
-        color: #fefefe;
-      }
-
-      .active, li:hover {
-        color: #333;
-      }
-    }
-
-    &__middle {
-      h2, span {
-        color: #fefefe;
-      }
-    }
-  }
-
-  .tasks {
-    background-color: #38393a;
-    color: #fefefe;
-
-    &__list {
-      li {
-        color: #fefefe;
-      }
-    }
-  }
-
-  .add-task__text, .add-project__text {
-    color: #fefefe;
-  }
 }
 
+/* Header
+  ============================================ */
 header {
   border-bottom: solid 1px #ca2100;
   background-color: $generic-bg;
@@ -206,8 +162,8 @@ header {
   nav {
     display: grid;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
@@ -280,6 +236,7 @@ header {
                 height: 20px;
               }
             }
+
           }
         }
       }
@@ -288,9 +245,7 @@ header {
 }
 
 /* Sidebar
-  ============================================
-*/
-
+  ============================================ */
 .sidebar {
   @include no-select();
   width: 266px;
@@ -307,11 +262,6 @@ header {
   }
 
   li {
-    padding-left: 10px;
-    padding-right: 15px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-
     &:hover .sidebar__project-delete {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -331,8 +281,8 @@ header {
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
     }
 
     &-delete {
@@ -419,8 +369,6 @@ header {
   }
 
   &__generic {
-    margin-bottom: 25px;
-
     li {
       list-style-type: none;
       color: #333;
@@ -430,22 +378,8 @@ header {
       cursor: pointer;
       line-height: 1.50;
       font-size: 15px;
-
-      span:first-of-type {
-        margin-right: 10px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-
-        svg {
-          width: 18px;
-          height: 18px;
-          color: #555;
-        }
-      }
+      padding-left: 0;
+      padding-right: 0;
 
       div:nth-child(1) {
         display: -webkit-box;
@@ -453,6 +387,22 @@ header {
         display: flex;
         padding: 10px 0 10px 10px;
         width: 100%;
+
+        span:first-of-type {
+          margin-right: 10px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+
+          svg {
+            width: 18px;
+            height: 18px;
+            color: #555;
+          }
+        }
       }
 
       &.active, &:hover {
@@ -464,16 +414,14 @@ header {
 }
 
 /* Show Confirm Delete
-  ============================================
-*/
-
+  ============================================ */
 .project-delete-modal {
   position: relative;
 
   &__inner {
     @include box-overlay();
     z-index: 99;
-    width:200px;
+    width: 200px;
     padding: 10px;
     top: 10px;
     right: 0;
@@ -488,39 +436,40 @@ header {
     }
 
     button {
-      @include btn('50px')
+      @include btn('50px');
     }
-
     span {
       @include cancel();
+      font-weight: normal;
     }
   }
 }
 
 /* Main Content
-  ============================================
-*/
-
+  ============================================ */
 .content {
   display: grid;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   grid-template-columns: 1fr auto;
   max-width: 922px;
   margin: auto;
 }
 
 /* Tasks
-  ============================================
-*/
-
+  ============================================ */
 .tasks {
   width: 656px;
-  background-color: #fff;
+  background-color: white;
   margin-left: 266px;
   border-right: $generic-border;
   min-height: calc(100vh);
   vertical-align: top;
-  padding: 80px 40px 84px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 80px;
+  padding-bottom: 84px;
 
   @include mq('900px') {
     margin-left: 0;
@@ -538,6 +487,8 @@ header {
   }
 
   &__list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     line-height: 18px;
     color: #333;
@@ -546,38 +497,36 @@ header {
     font-size: 14px;
     list-style-type: none;
     border-bottom: 1px solid #f0f0f0;
-  }
 
-  .checkbox-holder {
-    margin-right: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    line-height: 16px;
+    .checkbox-holder {
+      margin-right: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      line-height: 16px;
 
-    .checkbox {
-      cursor: pointer;
-      border-color: gray;
-      color: #343434;
-      height: 16px;
-      width: 16px;
-      display: block;
-      border: 1px solid gray;
-      border-radius: 16px;
+      .checkbox {
+        cursor: pointer;
+        border-color: gray;
+        color: #343434;
+        height: 16px;
+        width: 16px;
+        display: block;
+        border: 1px solid gray;
+        border-radius: 16px;
+      }
     }
   }
 }
 
 /* Add Task
-  ============================================
-*/
-
+  ============================================ */
 .add-task {
   &__overlay {
     background: rgba(102,102,102,0.5);
@@ -598,6 +547,8 @@ header {
       }
 
       overflow: visible;
+      margin-bottom: 20px;
+      margin-top: 55px;
       border-radius: 5px;
       background-color: white;
       position: absolute;
@@ -605,7 +556,7 @@ header {
       top: 50%;
       padding: 20px 30px;
       -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
 
       .header {
         font-size: 13px;
@@ -680,10 +631,8 @@ header {
   margin-left: 15px;
 }
 
-/* Task date
-  ============================================
-*/
-
+/* Task Date
+  ============================================ */
 .task-date {
   @include box-overlay();
   background-color: #fff;
@@ -701,8 +650,8 @@ header {
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
 
       span:first-of-type {
         margin-right: 10px;
@@ -716,9 +665,7 @@ header {
 }
 
 /* Project Overlay
-  ============================================
-*/
-
+  ============================================ */
 .project-overlay {
   @include box-overlay();
   background-color: white;
@@ -739,11 +686,8 @@ header {
   }
 }
 
-
 /* Add Project
-  ============================================
-*/
-
+  ============================================ */
 .add-project {
   padding-left: 13px;
   padding-right: 20px;
