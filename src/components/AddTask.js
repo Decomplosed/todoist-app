@@ -116,9 +116,10 @@ export const AddTask = ({
             setShowTaskDate={setShowTaskDate}
           />
           <input
-            type='text'
             className='add-task__content'
+            aria-label='Enter your task'
             data-testid='add-task-content'
+            type='text'
             value={task}
             onChange={(e) => setTask(e.target.value)}
           />
@@ -136,12 +137,21 @@ export const AddTask = ({
           </button>
           {!showQuickAddTask && (
             <span
-              className='add-task-cancel'
+              className='add-task__cancel'
               data-testid='add-task-main-cancel'
               onClick={() => {
                 setShowMain(false);
                 setShowProjectOverlay(false);
               }}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  setShowMain(false);
+                  setShowProjectOverlay(false);
+                }
+              }}
+              aria-label='Cancel adding a task'
+              tabIndex={0}
+              role='button'
             >
               Cancel
             </span>
