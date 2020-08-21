@@ -13,7 +13,12 @@ export const Tasks = () => {
 
   let projectName = '';
 
-  if (projects && selectedProject && !collatedTasksExist(selectedProject)) {
+  if (
+    projects.length > 0 &&
+    projects &&
+    selectedProject &&
+    !collatedTasksExist(selectedProject)
+  ) {
     projectName = getTitle(projects, selectedProject).name;
   }
 
