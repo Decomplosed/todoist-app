@@ -29,6 +29,7 @@ export const Header = ({ darkMode, setDarkMode }) => {
           </ul>
         </div>
       </nav>
+      <AddTask />
     </header>
   );
 };
