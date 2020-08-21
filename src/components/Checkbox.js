@@ -11,8 +11,14 @@ export const Checkbox = ({ id, taskDesc }) => {
       className='checkbox-holder'
       data-testid='checkbox-action'
       onClick={() => archiveTask()}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter') archiveTask();
+      }}
+      aria-label={`Mark ${taskDesc} as done?`}
+      role='button'
+      tabIndex={0}
     >
-      <span className='checkbox'></span>
+      <span className='checkbox' />
     </div>
   );
 };
