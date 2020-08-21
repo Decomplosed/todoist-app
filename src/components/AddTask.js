@@ -83,14 +83,24 @@ export const AddTask = ({
                 <h2 className='header'>Quick Add Task</h2>
                 <span
                   className='add-task__cancel-x'
-                  data-testid='att-task-quick-cancel'
+                  data-testid='add-task-quick-cancel'
+                  aria-label='Cancel adding task'
                   onClick={() => {
                     setShowMain(false);
                     setShowProjectOverlay(false);
                     setShowQuickAddTask(false);
                   }}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                      setShowMain(false);
+                      setShowProjectOverlay(false);
+                      setShowQuickAddTask(false);
+                    }
+                  }}
+                  tabIndex={0}
+                  role='button'
                 >
-                  x
+                  X
                 </span>
               </div>
             </>
