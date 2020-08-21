@@ -43,7 +43,7 @@ export const Header = ({ darkMode, setDarkMode }) => {
 
       <AddTask
         showAddTaskMain={false}
-        setShouldShowMain={setShouldShowMain}
+        shouldShowMain={shouldShowMain}
         showQuickAddTask={showQuickAddTask}
         setShowQuickAddTask={setShowQuickAddTask}
       />
