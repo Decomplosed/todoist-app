@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { FaPizzaSlice } from 'react-icons/fa';
 
 export const Header = ({ darkMode, setDarkMode }) => {
+  const [shouldShowMain, setShouldShowMain] = useState(false);
+
   return (
     <header className='header' data-testid='header'>
       <nav>
