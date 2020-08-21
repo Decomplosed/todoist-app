@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { AddTask } from '../AddTask';
 import { FaPizzaSlice } from 'react-icons/fa';
 
 export const Header = ({ darkMode, setDarkMode }) => {
