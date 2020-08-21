@@ -170,9 +170,13 @@ $generic-bg: #db4c3f;
 
     &__list {
       li {
-        
+        color: #fefefe;
       }
     }
+  }
+
+  .add-task__text, .add-project__text {
+    color: #fefefe;
   }
 }
 
