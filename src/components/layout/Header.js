@@ -3,6 +3,7 @@ import { FaPizzaSlice } from 'react-icons/fa';
 
 export const Header = ({ darkMode, setDarkMode }) => {
   const [shouldShowMain, setShouldShowMain] = useState(false);
+  const [showQuickAddTask, setShowQuickAddTask] = useState(false);
 
   return (
     <header className='header' data-testid='header'>
