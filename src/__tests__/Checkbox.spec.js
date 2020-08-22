@@ -15,3 +15,5 @@ jest.mock('../firebase', () => ({
     }))
   }
 }));
+
+describe('<Checkbox />', () => {})
