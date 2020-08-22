@@ -19,7 +19,7 @@ jest.mock('../firebase', () => ({
 describe('<Checkbox />', () => {
   describe('Success', () => {
     it('renders the task checkbox', () => {
-      const { queryByTestId } = render(<Checkbox />);
+      const { queryByTestId } = render(<Checkbox id='1' />);
     });
   });
 });
