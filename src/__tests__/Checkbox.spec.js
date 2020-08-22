@@ -20,5 +20,4 @@ describe('<Checkbox />', () => {
   describe('Success', () => {
     it('renders the task checkbox', () => {})
   })
-  describe('Failure', () => {})
 })
