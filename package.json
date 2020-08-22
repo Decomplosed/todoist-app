@@ -39,7 +39,7 @@
       "html",
       "text"
     ]
-  }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
