@@ -9,7 +9,7 @@ jest.mock('../firebase', () => ({
     firestore: jest.fn(() => ({
       collection: jest.fn(() => ({
         doc: jest.fn(() => ({
-
+          update: jest.fn()
         }))
       }))
     }))
