@@ -25,7 +25,15 @@ describe('<Checkbox />', () => {
       expect(queryByTestId('checkbox-action')).toBeTruthy();
     });
 
-    it('renders the task checkbox and accepts a click', () => {
+    it('renders the task checkbox and accepts a onClick', () => {
+      const { queryByTestId } = render(
+        <Checkbox id='1' taskDesc='Test description' />,
+      );
+      expect(queryByTestId('checkbox-action')).toBeTruthy();
+      fireEvent.click(queryByTestId('checkbox-action'));
+    });
+
+    it('renders the task checkbox and accepts onKeyDown', () => {
       const { queryByTestId } = render(
         <Checkbox id='1' taskDesc='Test description' />,
       );
