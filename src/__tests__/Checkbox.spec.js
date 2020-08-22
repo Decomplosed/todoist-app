@@ -22,7 +22,7 @@ describe('<Checkbox />', () => {
       const { queryByTestId, debug } = render(
         <Checkbox id='1' taskDesc='Test description' />,
       );
-      debug()
+      debug();
     });
   });
 });
