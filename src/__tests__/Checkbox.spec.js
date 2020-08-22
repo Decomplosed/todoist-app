@@ -4,4 +4,10 @@ import { Checkbox } from '../components/Checkbox';
 
 beforeEach(cleanup);
 
-jest.mock('../firebase', () => ({}));
+jest.mock('../firebase', () => ({
+  firebase: {
+    firestore: jest.fn(() => ({
+      
+    }))
+  }
+}));
