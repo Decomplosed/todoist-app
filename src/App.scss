@@ -175,6 +175,11 @@ $generic-bg: #db4c3f;
     .add-task__text, .add-project__text {
       color: #fefefe;
     }
+
+    .sidebar__project.active,
+    .sidebar__project:hover {
+      color: #333;
+    }
   }
 
 
