@@ -9,15 +9,17 @@ jest.mock('../firebase', () => ({
     firestore: jest.fn(() => ({
       collection: jest.fn(() => ({
         doc: jest.fn(() => ({
-          update: jest.fn()
-        }))
-      }))
-    }))
-  }
+          update: jest.fn(),
+        })),
+      })),
+    })),
+  },
 }));
 
 describe('<Checkbox />', () => {
   describe('Success', () => {
-    it('renders the task checkbox', () => {})
-  })
-})
+    it('renders the task checkbox', () => {
+      const { queryByTestId } = render(<Checkbox />);
+    });
+  });
+});
