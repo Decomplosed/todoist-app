@@ -38,7 +38,7 @@ describe('<Checkbox />', () => {
         <Checkbox id='1' taskDesc='Test description' />,
       );
       expect(queryByTestId('checkbox-action')).toBeTruthy();
-      fireEvent.click(queryByTestId('checkbox-action'));
+      fireEvent.keyDown(queryByTestId('checkbox-action'));
     });
   });
 });
