@@ -24,5 +24,7 @@ describe('<Checkbox />', () => {
       );
       expect(queryByTestId('checkbox-action')).toBeTruthy();
     });
+
+    it('renders the task checkbox and accepts a click', () => {})
   });
 });
