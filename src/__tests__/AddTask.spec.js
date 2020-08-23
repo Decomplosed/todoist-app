@@ -9,3 +9,5 @@ beforeEach(cleanup);
 jest.mock('../context', () => ({
   useSelectedProjectValue: jest.fn(() => ({ selectedProject: 1 })),
 }));
+
+jest.mock('../firebase', () => ({}));
