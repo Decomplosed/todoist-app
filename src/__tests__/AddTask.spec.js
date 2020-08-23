@@ -10,4 +10,10 @@ jest.mock('../context', () => ({
   useSelectedProjectValue: jest.fn(() => ({ selectedProject: 1 })),
 }));
 
-jest.mock('../firebase', () => ({}));
+jest.mock('../firebase', () => ({
+  firebase: {
+    firestore: jest.fn(() => ({
+
+    })),
+  },
+}));
