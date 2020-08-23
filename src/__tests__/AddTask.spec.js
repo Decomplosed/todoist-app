@@ -20,4 +20,8 @@ jest.mock('../firebase', () => ({
   },
 }));
 
-describe('<AddTask />', () => {})
+describe('<AddTask />', () => {
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+});
