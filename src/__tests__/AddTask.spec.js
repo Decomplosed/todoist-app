@@ -27,6 +27,7 @@ describe('<AddTask />', () => {
 
   describe('Success', () => {
     it('Renders the <AddTask />', () => {
+      const {queryByTestId} = render(<AddTask />)
     })
   })
 });
