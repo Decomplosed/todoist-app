@@ -19,3 +19,5 @@ jest.mock('../firebase', () => ({
     })),
   },
 }));
+
+describe('<AddTask />', () => {})
