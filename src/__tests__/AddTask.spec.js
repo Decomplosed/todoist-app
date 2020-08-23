@@ -24,4 +24,6 @@ describe('<AddTask />', () => {
   afterEach(() => {
     jest.clearAllMocks();
   });
+
+  describe('Success', () => {})
 });
