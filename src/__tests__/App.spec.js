@@ -5,5 +5,7 @@ import { App } from '../App';
 beforeEach(cleanup);
 
 describe('<App />', () => {
-  it('Renders the application', () => {})
-})
+  it('Renders the application', () => {
+    const { queryByTestId } = render(<App />);
+  });
+});
