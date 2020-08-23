@@ -7,5 +7,6 @@ beforeEach(cleanup);
 describe('<App />', () => {
   it('Renders the application', () => {
     const { queryByTestId } = render(<App />);
+    expect(queryByTestId('application')).toBeTruthy();
   });
 });
