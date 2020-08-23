@@ -4,4 +4,6 @@ import { App } from '../App';
 
 beforeEach(cleanup);
 
-describe('<App />', () => {})
+describe('<App />', () => {
+  it('Renders the application', () => {})
+})
