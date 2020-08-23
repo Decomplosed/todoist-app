@@ -5,3 +5,5 @@ import { firebase } from '../firebase';
 import { useSelectedProjectValue } from '../context';
 
 beforeEach(cleanup);
+
+jest.mock('../context', () => ({}))
