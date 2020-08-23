@@ -6,7 +6,6 @@ beforeEach(cleanup);
 
 describe('<App />', () => {
   it('Renders the application', () => {
-    const { queryByTestId, debug } = render(<App />);
-    debug();
+    const { queryByTestId } = render(<App />);
   });
 });
