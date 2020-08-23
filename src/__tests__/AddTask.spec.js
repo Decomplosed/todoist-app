@@ -25,5 +25,8 @@ describe('<AddTask />', () => {
     jest.clearAllMocks();
   });
 
-  describe('Success', () => {})
+  describe('Success', () => {
+    it('Renders the <AddTask />', () => {
+    })
+  })
 });
