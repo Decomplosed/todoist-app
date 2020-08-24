@@ -64,5 +64,7 @@ describe('<AddTask />', () => {
       fireEvent.click(queryByTestId('show-project-overlay'));
       expect(queryByTestId('project-overlay')).toBeTruthy();
     });
+
+    it('Renders the <AddTask /> task date overlay when clicked', () => {});
   });
 });
