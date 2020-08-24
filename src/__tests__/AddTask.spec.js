@@ -72,11 +72,11 @@ describe('<AddTask />', () => {
       expect(queryByTestId('add-task-main')).toBeTruthy();
 
       fireEvent.click(queryByTestId('show-task-date-overlay'));
-      expect(queryByTestId('task-date-overlay')).toBeTruthy()
+      expect(queryByTestId('task-date-overlay')).toBeTruthy();
     });
 
     it('Hides the <AddTask /> main when cancel is clicked', () => {
-      const { queryByTestId } = render(<AddTask showAddTaskMain />);
+      const { queryByTestId } = render(<AddTask showAddTaskMain={false} />);
     });
   });
 });
