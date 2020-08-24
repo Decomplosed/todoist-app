@@ -52,5 +52,7 @@ describe('<AddTask />', () => {
 
       expect(queryByTestId('add-task-main')).toBeTruthy();
     });
+
+    it('Renders the <AddTask /> project overlay when clicked', () => {});
   });
 });
