@@ -47,7 +47,7 @@ describe('<AddTask />', () => {
     });
 
     it('Renders the <AddTask /> main showable when clicked', () => {
-      
+      const { queryByTestId } = render(<AddTask />);
     });
   });
 });
