@@ -45,5 +45,9 @@ describe('<AddTask />', () => {
 
       expect(queryByTestId('quick-add-task')).toBeTruthy();
     });
+
+    it('Renders the <AddTask /> main showable when clicked', () => {
+      
+    });
   });
 });
