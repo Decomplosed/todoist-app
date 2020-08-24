@@ -74,5 +74,8 @@ describe('<AddTask />', () => {
       fireEvent.click(queryByTestId('show-task-date-overlay'));
       expect(queryByTestId('task-date-overlay')).toBeTruthy()
     });
+
+    it('Hides the <AddTask /> main when cancel is clicked', () => {
+    });
   });
 });
