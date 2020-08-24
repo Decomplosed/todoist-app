@@ -43,6 +43,7 @@ describe('<AddTask />', () => {
       );
 
       expect(queryByTestId('quick-add-task')).toBeTruthy();
+      expect(setShowQuickAddTask.toHaveBeenCalled(1));
     });
   });
 });
