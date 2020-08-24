@@ -34,7 +34,12 @@ describe('<AddTask />', () => {
     it('Renders the <AddTask /> quick overlay', () => {
       const setShowQuickAddTask = jest.fn();
       const { queryByTestId } = render(
-        <AddTask showAddTaskMain showShouldMain={false} showQuickAddTask />,
+        <AddTask
+          showAddTaskMain
+          showShouldMain={false}
+          showQuickAddTask
+          setShowQuickAddTask
+        />,
       );
     });
   });
