@@ -66,7 +66,7 @@ describe('<AddTask />', () => {
     });
 
     it('Renders the <AddTask /> task date overlay when clicked', () => {
-      const { queryByTestId } = render(<AddTask />);
+      const { queryByTestId } = render(<AddTask showAddTaskMain />);
     });
   });
 });
