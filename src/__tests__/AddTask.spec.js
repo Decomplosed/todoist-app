@@ -49,6 +49,8 @@ describe('<AddTask />', () => {
     it('Renders the <AddTask /> main showable when clicked', () => {
       const { queryByTestId } = render(<AddTask showAddTaskMain />);
       fireEvent.click(queryByTestId('show-main-action'));
+
+      expect(queryByTestId('show-main-action')).toBeTruthy();
     });
   });
 });
