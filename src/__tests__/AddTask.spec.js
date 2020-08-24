@@ -54,7 +54,9 @@ describe('<AddTask />', () => {
     });
 
     it('Renders the <AddTask /> project overlay when clicked', () => {
-      const { queryByTestId } = render(<AddTask showAddTaskMain />);
+      const { queryByTestId } = render(
+        <AddTask showAddTaskMain shouldShowMain />,
+      );
     });
   });
 });
