@@ -82,6 +82,7 @@ describe('<AddTask />', () => {
       expect(queryByTestId('add-task-main')).toBeTruthy();
 
       fireEvent.click(queryByTestId('add-task-main-cancel'));
+      expect(queryByTestId('add-task-main')).toBeFalsy();
     });
   });
 });
