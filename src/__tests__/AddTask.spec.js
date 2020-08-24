@@ -76,7 +76,7 @@ describe('<AddTask />', () => {
     });
 
     it('Hides the <AddTask /> main when cancel is clicked', () => {
-      const { queryByTestId } = render(<AddTask showAddTaskMain={false} />);
+      const { queryByTestId } = render(<AddTask showAddTaskMain />);
 
       fireEvent.click(queryByTestId('show-main-action'));
       expect(queryByTestId('add-task-main')).toBeTruthy();
