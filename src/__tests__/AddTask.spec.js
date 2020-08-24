@@ -30,5 +30,7 @@ describe('<AddTask />', () => {
       const { queryByTestId } = render(<AddTask />);
       expect(queryByTestId('add-task-comp')).toBeTruthy();
     });
+
+    it('Renders the <AddTask /> quick overlay', () => {});
   });
 });
