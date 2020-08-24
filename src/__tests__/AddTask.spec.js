@@ -62,6 +62,7 @@ describe('<AddTask />', () => {
       expect(queryByTestId('add-task-main')).toBeTruthy();
 
       fireEvent.click(queryByTestId('show-project-overlay'));
+      expect(queryByTestId('project-overlay')).toBeTruthy();
     });
   });
 });
