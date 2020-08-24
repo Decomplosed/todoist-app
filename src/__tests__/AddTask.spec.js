@@ -31,6 +31,8 @@ describe('<AddTask />', () => {
       expect(queryByTestId('add-task-comp')).toBeTruthy();
     });
 
-    it('Renders the <AddTask /> quick overlay', () => {});
+    it('Renders the <AddTask /> quick overlay', () => {
+      const setShowQuickAddTask = jest.fn();
+    });
   });
 });
