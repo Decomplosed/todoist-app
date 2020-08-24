@@ -72,6 +72,7 @@ describe('<AddTask />', () => {
       expect(queryByTestId('add-task-main')).toBeTruthy();
 
       fireEvent.click(queryByTestId('show-task-date-overlay'));
+      expect(queryByTestId('task-date-overlay')).toBeTruthy()
     });
   });
 });
