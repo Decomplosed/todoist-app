@@ -41,6 +41,8 @@ describe('<AddTask />', () => {
           setShowQuickAddTask
         />,
       );
+
+      expect(queryByTestId('quick-add-task')).toBeTruthy();
     });
   });
 });
