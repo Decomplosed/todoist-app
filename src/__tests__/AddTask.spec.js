@@ -50,7 +50,7 @@ describe('<AddTask />', () => {
       const { queryByTestId } = render(<AddTask showAddTaskMain />);
       fireEvent.click(queryByTestId('show-main-action'));
 
-      expect(queryByTestId('show-main-action')).toBeTruthy();
+      expect(queryByTestId('add-task-main')).toBeTruthy();
     });
   });
 });
