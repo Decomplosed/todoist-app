@@ -104,6 +104,8 @@ describe('<AddTask />', () => {
         selectedProject: 'TODAY',
       }));
       const { queryByTestId } = render(<AddTask showQuickAddTask={false} />);
+
+      fireEvent.click(queryByTestId('show-main-action'));
     });
   });
 });
