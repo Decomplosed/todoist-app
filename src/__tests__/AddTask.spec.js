@@ -102,6 +102,8 @@ describe('<AddTask />', () => {
       expect(setShowQuickAddTask).toHaveBeenCalled();
     });
 
-    it('Renders the <AddTask /> and adds a task to the inbox and clears state', () => {})
+    it('Renders the <AddTask /> and adds a task to the inbox and clears state', () => {
+      useSelectedProjectValue.mockImplementation(() => ({}))
+    })
   });
 });
