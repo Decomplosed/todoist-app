@@ -85,6 +85,8 @@ describe('<AddTask />', () => {
       expect(queryByTestId('add-task-main')).toBeFalsy();
     });
 
-    it('Renders the <AddTask /> for quick add task and then clicks cancel', () => {});
+    it('Renders the <AddTask /> for quick add task and then clicks cancel', () => {
+      const { queryByTestId } = render(<AddTask />);
+    });
   });
 });
