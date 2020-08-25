@@ -87,7 +87,7 @@ describe('<AddTask />', () => {
 
     it('Renders the <AddTask /> for quick add task and then clicks cancel', () => {
       const showQuickAddTask = true;
-      const setShowQuickAddTask = jest.fn();
+      const setShowQuickAddTask = jest.fn(() => !showQuickAddTask);
       const { queryByTestId } = render(<AddTask showMain showAddTaskMain />);
     });
   });
