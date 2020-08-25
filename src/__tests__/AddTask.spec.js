@@ -91,7 +91,7 @@ describe('<AddTask />', () => {
       const { queryByTestId } = render(
         <AddTask
           setShowQuickAddTask={showQuickAddTask}
-          showQuickAddTask={true}
+          showQuickAddTask
         />,
       );
 
