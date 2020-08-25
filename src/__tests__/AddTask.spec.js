@@ -90,7 +90,7 @@ describe('<AddTask />', () => {
       const setShowQuickAddTask = jest.fn(() => !showQuickAddTask);
       const { queryByTestId } = render(
         <AddTask
-          setShowQuickAddTask={showQuickAddTask}
+          setShowQuickAddTask={setShowQuickAddTask}
           showQuickAddTask
         />,
       );
