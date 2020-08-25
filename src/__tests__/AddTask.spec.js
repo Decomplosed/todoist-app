@@ -104,6 +104,7 @@ describe('<AddTask />', () => {
         selectedProject: 'TODAY',
       }));
       const showQuickAddTask = true;
+      const setShowQuickAddTask = jest.fn();
       const { queryByTestId } = render(<AddTask showQuickAddTask={false} />);
 
       fireEvent.click(queryByTestId('show-main-action'));
