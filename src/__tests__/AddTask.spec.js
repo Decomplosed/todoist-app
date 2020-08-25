@@ -84,5 +84,7 @@ describe('<AddTask />', () => {
       fireEvent.click(queryByTestId('add-task-main-cancel'));
       expect(queryByTestId('add-task-main')).toBeFalsy();
     });
+
+    it('Renders the <AddTask /> for quick add task and then clicks cancel', () => {});
   });
 });
