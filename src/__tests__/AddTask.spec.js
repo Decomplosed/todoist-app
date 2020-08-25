@@ -109,7 +109,7 @@ describe('<AddTask />', () => {
       expect(queryByTestId('add-task-content')).toBeTruthy();
 
       fireEvent.change(queryByTestId('add-task-content'), {
-        target: {'I am a new task and I am amazing!'}
+        target: {value: 'I am a new task and I am amazing!'}
       });
     });
   });
