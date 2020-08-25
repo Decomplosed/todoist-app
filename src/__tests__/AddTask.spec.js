@@ -89,7 +89,10 @@ describe('<AddTask />', () => {
       const showQuickAddTask = true;
       const setShowQuickAddTask = jest.fn(() => !showQuickAddTask);
       const { queryByTestId } = render(
-        <AddTask setShowQuickAddTask={showQuickAddTask} />,
+        <AddTask
+          setShowQuickAddTask={showQuickAddTask}
+          showQuickAddTask={true}
+        />,
       );
 
       fireEvent.click(queryByTestId('show-main-action'));
