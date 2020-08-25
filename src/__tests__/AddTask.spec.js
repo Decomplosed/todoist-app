@@ -108,7 +108,9 @@ describe('<AddTask />', () => {
       fireEvent.click(queryByTestId('show-main-action'));
       expect(queryByTestId('add-task-content')).toBeTruthy();
 
-      fireEvent.change(queryByTestId('add-task-content'));
+      fireEvent.change(queryByTestId('add-task-content'), {
+        target: {'I am a new task and I am amazing!'}
+      });
     });
   });
 });
