@@ -100,7 +100,9 @@ describe('<AddTask />', () => {
     });
 
     it('Renders the <AddTask /> and adds a task to the inbox and clears state', () => {
-      useSelectedProjectValue.mockImplementation(() => ({}))
-    })
+      useSelectedProjectValue.mockImplementation(() => ({
+        selectedProject: 'TODAY',
+      }));
+    });
   });
 });
