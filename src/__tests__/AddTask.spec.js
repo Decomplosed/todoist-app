@@ -101,5 +101,7 @@ describe('<AddTask />', () => {
       fireEvent.click(queryByTestId('add-task-quick-cancel'));
       expect(setShowQuickAddTask).toHaveBeenCalled();
     });
+
+    it('Renders the <AddTask /> and adds a task to the inbox and clears state', () => {})
   });
 });
