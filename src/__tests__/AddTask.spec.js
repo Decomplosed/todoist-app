@@ -114,6 +114,8 @@ describe('<AddTask />', () => {
       expect(queryByTestId('add-task-content').value).toBe(
         'I am a new task and I am amazing!',
       );
+
+      fireEvent.click(queryByTestId('add-task'));
     });
   });
 });
