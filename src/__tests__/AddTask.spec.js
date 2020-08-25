@@ -105,7 +105,9 @@ describe('<AddTask />', () => {
       }));
       const showQuickAddTask = true;
       const setShowQuickAddTask = jest.fn(() => !showQuickAddTask);
-      const { queryByTestId } = render(<AddTask showQuickAddTask={false} />);
+      const { queryByTestId } = render(
+        <AddTask setShowQuickAddTask={setShowQuickAddTask} />,
+      );
 
       fireEvent.click(queryByTestId('show-main-action'));
       expect(queryByTestId('add-task-content')).toBeTruthy();
