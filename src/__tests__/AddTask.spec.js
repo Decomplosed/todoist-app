@@ -103,6 +103,7 @@ describe('<AddTask />', () => {
       useSelectedProjectValue.mockImplementation(() => ({
         selectedProject: 'TODAY',
       }));
+      const showQuickAddTask = true;
       const { queryByTestId } = render(<AddTask showQuickAddTask={false} />);
 
       fireEvent.click(queryByTestId('show-main-action'));
