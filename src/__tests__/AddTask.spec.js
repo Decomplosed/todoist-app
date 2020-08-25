@@ -103,7 +103,7 @@ describe('<AddTask />', () => {
       useSelectedProjectValue.mockImplementation(() => ({
         selectedProject: 'TODAY',
       }));
-      const { queryByTestId } = render(<AddTask />);
+      const { queryByTestId } = render(<AddTask setShowQuickAddTask={false} />);
     });
   });
 });
