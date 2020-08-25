@@ -86,7 +86,7 @@ describe('<AddTask />', () => {
     });
 
     it('Renders the <AddTask /> for quick add task and then clicks cancel', () => {
-      const { queryByTestId } = render(<AddTask />);
+      const { queryByTestId } = render(<AddTask showMain />);
     });
   });
 });
