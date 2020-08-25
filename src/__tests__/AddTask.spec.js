@@ -106,7 +106,7 @@ describe('<AddTask />', () => {
       const { queryByTestId } = render(<AddTask showQuickAddTask={false} />);
 
       fireEvent.click(queryByTestId('show-main-action'));
-      expect(queryByTestId('add-task-main')).toBeTruthy();
+      expect(queryByTestId('add-task-content')).toBeTruthy();
     });
   });
 });
