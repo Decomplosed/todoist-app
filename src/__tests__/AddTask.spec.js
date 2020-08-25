@@ -97,7 +97,9 @@ describe('<AddTask />', () => {
       );
 
       expect(queryByTestId('add-task-main')).toBeTruthy();
+
       fireEvent.click(queryByTestId('add-task-quick-cancel'));
+      expect(setShowQuickAddTask).toHaveBeenCalled();
     });
   });
 });
