@@ -180,6 +180,8 @@ describe('<AddTask />', () => {
       expect(setShowQuickAddTask).toHaveBeenCalled();
     });
 
-    it('Renders the <AddTask /> and adds a task with a task date', () => {})
+    it('Renders the <AddTask /> and adds a task with a task date', () => {
+      useSelectedProjectValue.mockImplementation()
+    })
   });
 });
