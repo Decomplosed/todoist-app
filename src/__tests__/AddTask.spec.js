@@ -101,7 +101,7 @@ describe('<AddTask />', () => {
 
     it('Renders the <AddTask /> and adds a task to the inbox', () => {
       useSelectedProjectValue.mockImplementation(() => ({
-        selectedProject: 'TODAY',
+        selectedProject: 'INBOX',
       }));
       const showQuickAddTask = true;
       const setShowQuickAddTask = jest.fn(() => !showQuickAddTask);
@@ -123,7 +123,7 @@ describe('<AddTask />', () => {
       );
 
       fireEvent.click(queryByTestId('add-task'));
-      expect(setShowQuickAddTask).toHaveBeenCalled()
+      expect(setShowQuickAddTask).toHaveBeenCalled();
     });
   });
 });
