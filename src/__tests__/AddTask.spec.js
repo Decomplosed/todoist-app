@@ -57,6 +57,7 @@ describe('<AddTask />', () => {
       const { queryByTestId } = render(<AddTask showAddTaskMain />);
 
       fireEvent.keyDown(queryByTestId('show-main-action'));
+      expect(queryByTestId('add-task-main')).toBeTruthy();
     });
 
     it('Renders the <AddTask /> project overlay when clicked', () => {
