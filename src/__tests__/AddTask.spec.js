@@ -190,7 +190,9 @@ describe('<AddTask />', () => {
       expect(queryByTestId('add-task-content')).toBeTruthy();
       expect(queryByTestId('add-task-main')).toBeTruthy();
 
-      fireEvent.change(queryByTestId('add-task-content'), {})
+      fireEvent.change(queryByTestId('add-task-content'), {
+        target: { value: 'I am a new task and I am amazing!' },
+      });
     });
   });
 });
