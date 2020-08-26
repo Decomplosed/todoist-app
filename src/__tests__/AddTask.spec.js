@@ -153,7 +153,7 @@ describe('<AddTask />', () => {
       expect(setShowQuickAddTask).toHaveBeenCalled();
     });
 
-    it('Renders the <AddTask /> and adds a task to TODAY', () => {
+    it('Renders the <AddTask /> and adds a task to NEXT_7', () => {
       useSelectedProjectValue.mockImplementation(() => ({
         selectedProject: 'TODAY',
       }));
