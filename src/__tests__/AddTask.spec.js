@@ -152,5 +152,32 @@ describe('<AddTask />', () => {
       fireEvent.click(queryByTestId('add-task'));
       expect(setShowQuickAddTask).toHaveBeenCalled();
     });
+
+    it('Renders the <AddTask /> and adds a task to TODAY', () => {
+      useSelectedProjectValue.mockImplementation(() => ({
+        selectedProject: 'TODAY',
+      }));
+      const showQuickAddTask = true;
+      const setShowQuickAddTask = jest.fn(() => !showQuickAddTask);
+      const { queryByTestId } = render(
+        <AddTask
+          showQuickAddTask={showQuickAddTask}
+          setShowQuickAddTask={setShowQuickAddTask}
+        />,
+      );
+
+      fireEvent.click(queryByTestId('show-main-action'));
+      expect(queryByTestId('add-task-content')).toBeTruthy();
+
+      fireEvent.change(queryByTestId('add-task-content'), {
+        target: { value: 'I am a new task and I am amazing!' },
+      });
+      expect(queryByTestId('add-task-content').value).toBe(
+        'I am a new task and I am amazing!',
+      );
+
+      fireEvent.click(queryByTestId('add-task'));
+      expect(setShowQuickAddTask).toHaveBeenCalled();
+    });
   });
 });
