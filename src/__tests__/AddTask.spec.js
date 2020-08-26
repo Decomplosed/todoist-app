@@ -202,6 +202,8 @@ describe('<AddTask />', () => {
 
       fireEvent.click(queryByTestId('task-date-tomorrow'));
       expect(queryByTestId('task-date-overlay')).toBeFalsy();
+
+      fireEvent.click(queryByTestId('show-task-date-overlay'));
     });
   });
 });
