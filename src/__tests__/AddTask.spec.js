@@ -179,5 +179,7 @@ describe('<AddTask />', () => {
       fireEvent.click(queryByTestId('add-task'));
       expect(setShowQuickAddTask).toHaveBeenCalled();
     });
+
+    it('Renders the <AddTask /> and adds a task with a task date', () => {})
   });
 });
