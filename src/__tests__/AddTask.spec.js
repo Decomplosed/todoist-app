@@ -197,7 +197,7 @@ describe('<AddTask />', () => {
         'I am the most amazing task ever!',
       );
 
-      fireEvent.click(queryByTestId('show-task-date'));
+      fireEvent.click(queryByTestId('show-task-date-overlay'));
     });
   });
 });
