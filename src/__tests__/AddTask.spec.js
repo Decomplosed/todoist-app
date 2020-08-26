@@ -196,6 +196,8 @@ describe('<AddTask />', () => {
       expect(queryByTestId('add-task-content').value).toBe(
         'I am the most amazing task ever!',
       );
+
+      fireEvent.click(queryByTestId('show-task-date'));
     });
   });
 });
