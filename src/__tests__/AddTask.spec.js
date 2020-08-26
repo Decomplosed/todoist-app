@@ -181,7 +181,9 @@ describe('<AddTask />', () => {
     });
 
     it('Renders the <AddTask /> and adds a task with a task date', () => {
-      useSelectedProjectValue.mockImplementation()
-    })
+      useSelectedProjectValue.mockImplementation(() => ({
+        selectedProject: '1',
+      }));
+    });
   });
 });
