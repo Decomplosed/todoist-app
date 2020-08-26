@@ -184,6 +184,7 @@ describe('<AddTask />', () => {
       useSelectedProjectValue.mockImplementation(() => ({
         selectedProject: '1',
       }));
+      const { queryByTestId } = render(<AddTask />);
     });
   });
 });
