@@ -61,6 +61,12 @@ describe('<AddTask />', () => {
         code: 65,
       });
       expect(queryByTestId('add-task-main')).toBeFalsy();
+
+      fireEvent.keyDown(queryByTestId('show-main-action'), {
+        key: 'Enter',
+        code: 13,
+      });
+      expect(queryByTestId('add-task-main')).toBeTruthy();
     });
 
     it('Renders the <AddTask /> project overlay when clicked', () => {
