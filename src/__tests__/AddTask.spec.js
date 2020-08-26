@@ -198,6 +198,7 @@ describe('<AddTask />', () => {
       );
 
       fireEvent.click(queryByTestId('show-task-date-overlay'));
+      expect(queryByTestId('task-date-overlay')).toBeTruthy();
     });
   });
 });
