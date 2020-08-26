@@ -53,6 +53,9 @@ describe('<AddTask />', () => {
       expect(queryByTestId('add-task-main')).toBeTruthy();
     });
 
+    it('Renders the <AddTask /> main showable on key down', () => {
+    });
+
     it('Renders the <AddTask /> project overlay when clicked', () => {
       const { queryByTestId } = render(
         <AddTask showAddTaskMain shouldShowMain />,
