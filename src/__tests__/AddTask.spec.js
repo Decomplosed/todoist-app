@@ -185,6 +185,8 @@ describe('<AddTask />', () => {
         selectedProject: '1',
       }));
       const { queryByTestId } = render(<AddTask showMain />);
+
+      fireEvent.click(queryByTestId('show-main-action'));
     });
   });
 });
