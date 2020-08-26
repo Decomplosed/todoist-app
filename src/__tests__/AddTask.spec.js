@@ -49,8 +49,11 @@ describe('<AddTask />', () => {
     it('Renders the <AddTask /> main showable using onClick', () => {
       const { queryByTestId } = render(<AddTask showAddTaskMain />);
 
-      fireEvent.click(queryByTestId('show-main-action'));
-      expect(queryByTestId('add-task-main')).toBeTruthy();
+      fireEvent.click(queryByTestId('show-main-action'), {
+        key: 'a',
+        code: 65,
+      });
+      expect(queryByTestId('add-task-main')).toBeFalsy();
     });
 
     it('Renders the <AddTask /> main showable using keyDown', () => {
