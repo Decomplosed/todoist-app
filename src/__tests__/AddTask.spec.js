@@ -128,7 +128,7 @@ describe('<AddTask />', () => {
 
     it('Renders the <AddTask /> and adds a task to TODAY', () => {
       useSelectedProjectValue.mockImplementation(() => ({
-        selectedProject: 'INBOX',
+        selectedProject: 'TODAY',
       }));
       const showQuickAddTask = true;
       const setShowQuickAddTask = jest.fn(() => !showQuickAddTask);
