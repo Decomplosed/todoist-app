@@ -187,6 +187,7 @@ describe('<AddTask />', () => {
       const { queryByTestId } = render(<AddTask showMain />);
 
       fireEvent.click(queryByTestId('show-main-action'));
+      expect(queryByTestId('add-task-content')).toBeTruthy();
     });
   });
 });
