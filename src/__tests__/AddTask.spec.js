@@ -155,7 +155,7 @@ describe('<AddTask />', () => {
 
     it('Renders the <AddTask /> and adds a task to NEXT_7', () => {
       useSelectedProjectValue.mockImplementation(() => ({
-        selectedProject: 'TODAY',
+        selectedProject: 'NEXT_7',
       }));
       const showQuickAddTask = true;
       const setShowQuickAddTask = jest.fn(() => !showQuickAddTask);
