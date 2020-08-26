@@ -54,6 +54,7 @@ describe('<AddTask />', () => {
     });
 
     it('Renders the <AddTask /> main showable on key down', () => {
+      const { queryByTestId } = render(<AddTask showAddTaskMain />);
     });
 
     it('Renders the <AddTask /> project overlay when clicked', () => {
