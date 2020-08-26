@@ -50,7 +50,7 @@ describe('<AddTask />', () => {
       const { queryByTestId } = render(<AddTask showAddTaskMain />);
 
       fireEvent.click(queryByTestId('show-main-action'));
-      expect(queryByTestId('add-task-main')).toBeFalsy();
+      expect(queryByTestId('add-task-main')).toBeTruthy();
     });
 
     it('Renders the <AddTask /> main showable using keyDown', () => {
