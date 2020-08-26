@@ -46,14 +46,14 @@ describe('<AddTask />', () => {
       expect(queryByTestId('quick-add-task')).toBeTruthy();
     });
 
-    it('Renders the <AddTask /> main showable when clicked', () => {
+    it('Renders the <AddTask /> main showable using onClick', () => {
       const { queryByTestId } = render(<AddTask showAddTaskMain />);
 
       fireEvent.click(queryByTestId('show-main-action'));
       expect(queryByTestId('add-task-main')).toBeTruthy();
     });
 
-    it('Renders the <AddTask /> main showable on key down', () => {
+    it('Renders the <AddTask /> main showable using keyDown', () => {
       const { queryByTestId } = render(<AddTask showAddTaskMain />);
 
       fireEvent.keyDown(queryByTestId('show-main-action'));
