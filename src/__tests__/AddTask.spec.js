@@ -122,10 +122,10 @@ describe('<AddTask />', () => {
         <AddTask setShowQuickAddTask={setShowQuickAddTask} showQuickAddTask />,
       );
 
-      fireEvent.click(queryByTestId('show-main-action'));
+      fireEvent.keyDown(queryByTestId('show-main-action'));
       expect(queryByTestId('add-task-main')).toBeTruthy();
 
-      fireEvent.click(queryByTestId('add-task-quick-cancel'));
+      fireEvent.keyDown(queryByTestId('add-task-quick-cancel'));
       expect(setShowQuickAddTask).toHaveBeenCalled();
     });
 
