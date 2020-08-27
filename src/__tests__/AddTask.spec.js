@@ -126,7 +126,7 @@ describe('<AddTask />', () => {
         key: 'a',
         code: 65,
       });
-      expect(queryByTestId('add-task-main')).toBeTruthy();
+      expect(setShowQuickAddTask).not.toHaveBeenCalled();
 
       fireEvent.keyDown(queryByTestId('add-task-quick-cancel'));
       expect(setShowQuickAddTask).toHaveBeenCalled();
