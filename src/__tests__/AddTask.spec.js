@@ -85,7 +85,7 @@ describe('<AddTask />', () => {
       const { queryByTestId } = render(<AddTask showAddTaskMain />);
     });
 
-    it('Renders the <AddTask /> task date overlay when clicked', () => {
+    it('Renders the <AddTask /> task date overlay using onKeyDown', () => {
       const { queryByTestId } = render(<AddTask showAddTaskMain />);
 
       fireEvent.click(queryByTestId('show-main-action'));
