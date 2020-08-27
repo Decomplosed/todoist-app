@@ -122,7 +122,10 @@ describe('<AddTask />', () => {
         <AddTask setShowQuickAddTask={setShowQuickAddTask} showQuickAddTask />,
       );
 
-      fireEvent.keyDown(queryByTestId('show-main-action'));
+      fireEvent.keyDown(queryByTestId('show-main-action'), {
+        key: 'a',
+        code: 65,
+      });
       expect(queryByTestId('add-task-main')).toBeTruthy();
 
       fireEvent.keyDown(queryByTestId('add-task-quick-cancel'));
