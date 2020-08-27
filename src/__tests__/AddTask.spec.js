@@ -114,6 +114,7 @@ describe('<AddTask />', () => {
         key: 'Enter',
         code: 13,
       });
+      expect(queryByTestId('add-task-main')).toBeTruthy();
     });
 
     it('Renders the <AddTask /> for quick add task and then clicks cancel using onClick', () => {
