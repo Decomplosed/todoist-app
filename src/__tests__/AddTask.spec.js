@@ -91,7 +91,7 @@ describe('<AddTask />', () => {
       expect(queryByTestId('task-date-overlay')).toBeTruthy();
     });
 
-    it('Hides the <AddTask /> main when cancel is clicked', () => {
+    it('Hides the <AddTask /> main when cancel is clicked using onClick', () => {
       const { queryByTestId } = render(<AddTask showAddTaskMain />);
 
       fireEvent.click(queryByTestId('show-main-action'));
