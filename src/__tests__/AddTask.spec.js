@@ -101,6 +101,8 @@ describe('<AddTask />', () => {
         code: 65,
       });
       expect(queryByTestId('project-overlay')).toBeFalsy();
+
+      fireEvent.keyDown(queryByTestId('show-project-overlay'))
     });
 
     it('Renders the <AddTask /> task date overlay using onKeyDown', () => {
