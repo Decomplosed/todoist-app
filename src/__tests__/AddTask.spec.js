@@ -103,6 +103,8 @@ describe('<AddTask />', () => {
 
     it('Hides the <AddTask /> main when cancel is clicked using onKeyDown', () => {
       const { queryByTestId } = render(<AddTask showAddTaskMain />);
+
+      fireEvent.keyDown(queryByTestId('show-main-action'));
     });
 
     it('Renders the <AddTask /> for quick add task and then clicks cancel using onClick', () => {
