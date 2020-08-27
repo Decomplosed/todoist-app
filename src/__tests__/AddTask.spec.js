@@ -90,7 +90,10 @@ describe('<AddTask />', () => {
       });
       expect(queryByTestId('add-task-main')).toBeFalsy();
 
-      fireEvent.keyDown(queryByTestId('show-main-action'));
+      fireEvent.keyDown(queryByTestId('show-main-action'), {
+        key: 'Enter',
+        code: 13,
+      });
     });
 
     it('Renders the <AddTask /> task date overlay using onKeyDown', () => {
