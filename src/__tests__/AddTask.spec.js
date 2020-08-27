@@ -69,7 +69,7 @@ describe('<AddTask />', () => {
       expect(queryByTestId('add-task-main')).toBeTruthy();
     });
 
-    it('Renders the <AddTask /> project overlay when clicked', () => {
+    it('Renders the <AddTask /> project overlay when using onClick', () => {
       const { queryByTestId } = render(
         <AddTask showAddTaskMain shouldShowMain />,
       );
