@@ -119,7 +119,8 @@ describe('<AddTask />', () => {
       fireEvent.keyDown(queryByTestId('add-task-main-cancel'), {
         key: 'a',
         code: 65,
-      })
+      });
+      expect(queryByTestId('add-task-main')).toBeTruthy();
     });
 
     it('Renders the <AddTask /> for quick add task and then clicks cancel using onClick', () => {
