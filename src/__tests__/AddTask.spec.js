@@ -83,6 +83,8 @@ describe('<AddTask />', () => {
 
     it('renders the <AddTask /> project overlay when using onKeyDown', () => {
       const { queryByTestId } = render(<AddTask showAddTaskMain />);
+
+      fireEvent.keyDown(queryByTestId('show-main-action'));
     });
 
     it('Renders the <AddTask /> task date overlay using onKeyDown', () => {
