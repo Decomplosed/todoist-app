@@ -101,6 +101,10 @@ describe('<AddTask />', () => {
       expect(queryByTestId('add-task-main')).toBeFalsy();
     });
 
+    it('Hides the <AddTask /> main when cancel is clicked using onKeyDown', () => {
+      const { queryByTestId } = render(<AddTask showAddTaskMain />);
+    });
+
     it('Renders the <AddTask /> for quick add task and then clicks cancel using onClick', () => {
       const showQuickAddTask = true;
       const setShowQuickAddTask = jest.fn(() => !showQuickAddTask);
