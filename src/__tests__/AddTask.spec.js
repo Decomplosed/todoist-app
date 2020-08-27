@@ -81,6 +81,8 @@ describe('<AddTask />', () => {
       expect(queryByTestId('project-overlay')).toBeTruthy();
     });
 
+    it('renders the <AddTask /> project overlay when using onKeyDown', () => {});
+
     it('Renders the <AddTask /> task date overlay when clicked', () => {
       const { queryByTestId } = render(<AddTask showAddTaskMain />);
 
