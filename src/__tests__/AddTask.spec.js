@@ -109,6 +109,8 @@ describe('<AddTask />', () => {
         code: 65,
       });
       expect(queryByTestId('add-task-main')).toBeFalsy();
+
+      fireEvent.keyDown(queryByTestId('show-main-action'));
     });
 
     it('Renders the <AddTask /> for quick add task and then clicks cancel using onClick', () => {
