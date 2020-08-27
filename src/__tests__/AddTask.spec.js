@@ -128,7 +128,10 @@ describe('<AddTask />', () => {
       });
       expect(setShowQuickAddTask).not.toHaveBeenCalled();
 
-      fireEvent.keyDown(queryByTestId('add-task-quick-cancel'));
+      fireEvent.keyDown(queryByTestId('add-task-quick-cancel'), {
+        key: 'Enter',
+        code: 13,
+      });
       expect(setShowQuickAddTask).toHaveBeenCalled();
     });
 
