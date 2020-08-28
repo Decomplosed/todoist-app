@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, fireEvent, cleanup } from '@testing-library/react';
 import { ProjectOverlay } from '../components/ProjectOverlay';
-import { useSelectedProjectValue } from '../context';
+import { useProjectsValue } from '../context';
 
 beforeEach(cleanup);
 
@@ -73,6 +73,7 @@ describe('<ProjectOverlay />', () => {
 
       const { queryByTestId } = render(<ProjectOverlay showProjectOverlay />);
       expect(queryByTestId('project-overlay')).toBeTruthy();
+      expect(queryByTestId('project-overlay-action')).toBeFalsy();
     });
   });
 });
