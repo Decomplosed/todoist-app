@@ -17,3 +17,5 @@ jest.mock('../context', () => ({
     ],
   })),
 }));
+
+describe('<ProjectOverlay', () => {});
