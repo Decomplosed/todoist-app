@@ -57,6 +57,11 @@ describe('<ProjectOverlay />', () => {
         code: 65,
       });
       expect(setProject).not.toHaveBeenCalled();
+
+      fireEvent.keyDown(queryByTestId('project-overlay-action'), {
+        key: 'Enter',
+        code: 13,
+      });
     });
   });
   describe('Failure', () => {});
