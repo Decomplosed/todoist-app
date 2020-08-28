@@ -72,6 +72,7 @@ describe('<ProjectOverlay />', () => {
       }));
 
       const { queryByTestId } = render(<ProjectOverlay showProjectOverlay />);
+      expect(queryByTestId('project-overlay')).toBeTruthy();
     });
   });
 });
