@@ -4,3 +4,5 @@ import { ProjectOverlay } from '../components/ProjectOverlay';
 import { useSelectedProjectValue } from '../context';
 
 beforeEach(cleanup);
+
+jest.mock('../context');
