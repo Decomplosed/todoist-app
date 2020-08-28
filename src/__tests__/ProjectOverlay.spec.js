@@ -62,6 +62,7 @@ describe('<ProjectOverlay />', () => {
         key: 'Enter',
         code: 13,
       });
+      expect(setProject).toHaveBeenCalled();
     });
   });
   describe('Failure', () => {});
