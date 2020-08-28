@@ -33,8 +33,9 @@ describe('<ProjectOverlay />', () => {
         />,
       );
       expect(queryByTestId('project-overlay')).toBeTruthy();
-      
+
       fireEvent.click(queryByTestId('project-overlay-action'));
+      expect(setProject).toHaveBeenCalled();
     });
   });
   describe('Failure', () => {});
