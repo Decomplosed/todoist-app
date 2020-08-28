@@ -37,6 +37,12 @@ describe('<ProjectOverlay />', () => {
       fireEvent.click(queryByTestId('project-overlay-action'));
       expect(setProject).toHaveBeenCalled();
     });
+
+    it('Renders the <ProjectOverlay /> and calls setShowProjectOverlay using onKeyDown', () => {
+      const showProjectOverlay = true;
+      const setProject = jest.fn();
+      const setShowProjectOverlay = jest.fn(() => !showProjectOverlay);
+    });
   });
   describe('Failure', () => {});
 });
