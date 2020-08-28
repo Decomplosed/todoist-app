@@ -56,6 +56,7 @@ describe('<ProjectOverlay />', () => {
         key: 'a',
         code: 65,
       });
+      expect(setProject).not.toHaveBeenCalled();
     });
   });
   describe('Failure', () => {});
