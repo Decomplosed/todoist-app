@@ -65,5 +65,7 @@ describe('<ProjectOverlay />', () => {
       expect(setProject).toHaveBeenCalled();
     });
   });
-  describe('Failure', () => {});
+  describe('Failure', () => {
+    it('<ProjectOverlay /> does not render with any projects', () => {});
+  });
 });
