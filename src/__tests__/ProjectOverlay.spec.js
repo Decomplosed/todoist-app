@@ -26,7 +26,11 @@ describe('<ProjectOverlay />', () => {
       const setShowProjectOverlay = jest.fn(() => !showProjectOverlay);
 
       const { queryByTestId } = render(
-        <ProjectOverlay showProjectOverlay setProject={setProject} />,
+        <ProjectOverlay
+          showProjectOverlay
+          setProject={setProject}
+          setShowProjectOverlay={setShowProjectOverlay}
+        />,
       );
     });
   });
