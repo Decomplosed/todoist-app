@@ -20,7 +20,7 @@ jest.mock('../context', () => ({
 
 describe('<ProjectOverlay />', () => {
   describe('Success', () => {
-    it('Renders the <ProjectOverlay />', () => {
+    it('Renders the <ProjectOverlay /> and calls setShowProjectOverlay using onClick', () => {
       const showProjectOverlay = true;
       const setProject = jest.fn();
       const setShowProjectOverlay = jest.fn(() => !showProjectOverlay);
