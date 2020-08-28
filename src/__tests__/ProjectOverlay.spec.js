@@ -70,6 +70,8 @@ describe('<ProjectOverlay />', () => {
       useProjectsValue.mockImplementation(() => ({
         projects: [],
       }));
+
+      const { queryByTestId } = render(<ProjectOverlay showProjectOverlay />);
     });
   });
 });
