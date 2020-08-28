@@ -22,5 +22,7 @@ describe('<ProjectOverlay />', () => {
   describe('Success', () => {
     it('Renders the <ProjectOverlay />', () => {});
   });
-  describe('Failure', () => {});
+  describe('Failure', () => {
+    const showProjectOverlay = true;
+  });
 });
