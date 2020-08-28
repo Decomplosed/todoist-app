@@ -18,4 +18,6 @@ jest.mock('../context', () => ({
   })),
 }));
 
-describe('<ProjectOverlay', () => {});
+describe('<ProjectOverlay />', () => {
+  describe('Success', () => {})
+});
