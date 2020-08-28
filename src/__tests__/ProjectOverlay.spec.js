@@ -6,5 +6,7 @@ import { useSelectedProjectValue } from '../context';
 beforeEach(cleanup);
 
 jest.mock('../context', () => ({
-  useProjectsValue: jest.fn(() => ({}))
+  useProjectsValue: jest.fn(() => ({
+    projects: []
+  }))
 }));
