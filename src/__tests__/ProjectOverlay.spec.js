@@ -25,7 +25,9 @@ describe('<ProjectOverlay />', () => {
       const setProject = jest.fn();
       const setShowProjectOverlay = jest.fn(() => !showProjectOverlay);
 
-      const { queryByTestId } = render(<ProjectOverlay showProjectOverlay />);
+      const { queryByTestId } = render(
+        <ProjectOverlay showProjectOverlay setProject={setProject} />,
+      );
     });
   });
   describe('Failure', () => {});
