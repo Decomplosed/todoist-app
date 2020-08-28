@@ -20,11 +20,11 @@ jest.mock('../context', () => ({
 
 describe('<ProjectOverlay />', () => {
   describe('Success', () => {
-    it('Renders the <ProjectOverlay />', () => {});
+    it('Renders the <ProjectOverlay />', () => {
+      const showProjectOverlay = true;
+      const setProject = jest.fn();
+      const setShowProjectOverlay = jest.fn(() => !showProjectOverlay);
+    });
   });
-  describe('Failure', () => {
-    const showProjectOverlay = true;
-    const setProject = jest.fn();
-    const setShowProjectOverlay = jest.fn(() => !showProjectOverlay);
-  });
+  describe('Failure', () => {});
 });
