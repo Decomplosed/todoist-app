@@ -66,6 +66,10 @@ describe('<ProjectOverlay />', () => {
     });
   });
   describe('Failure', () => {
-    it('<ProjectOverlay /> does not render with any projects', () => {});
+    it('<ProjectOverlay /> does not render with any projects', () => {
+      useProjectsValue.mockImplementation(() => ({
+        projects: [],
+      }));
+    });
   });
 });
