@@ -7,6 +7,13 @@ beforeEach(cleanup);
 
 jest.mock('../context', () => ({
   useProjectsValue: jest.fn(() => ({
-    projects: []
-  }))
+    projects: [
+      {
+        name: '🙌 THE OFFICE',
+        projectId: '1',
+        userId: 'Jx3X378u2QjdGeEQdasj',
+        docId: 'michael-scott',
+      },
+    ],
+  })),
 }));
