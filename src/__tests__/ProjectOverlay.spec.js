@@ -32,6 +32,7 @@ describe('<ProjectOverlay />', () => {
           setShowProjectOverlay={setShowProjectOverlay}
         />,
       );
+      expect(queryByTestId('project-overlay')).toBeTruthy();
     });
   });
   describe('Failure', () => {});
