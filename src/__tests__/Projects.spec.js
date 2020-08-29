@@ -25,5 +25,7 @@ describe('<Projects />', () => {
     jest.clearAllMocks();
   });
 
-  describe('Success', () => {})
+  describe('Success', () => {
+    it('Renders <Projects />', () => {})
+  })
 });
