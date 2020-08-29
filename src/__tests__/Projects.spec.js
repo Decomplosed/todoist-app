@@ -43,7 +43,8 @@ describe('<Projects />', () => {
     });
 
     it('Renders <Projects /> adn selects an active project using onKeyDown', () => {
-      const { queryByTestId } = render(<Projects activeValue="0" />);
-    })
+      const { queryByTestId } = render(<Projects activeValue='0' />);
+      expect(queryByTestId('project-action')).toBeTruthy();
+    });
   });
 });
