@@ -24,4 +24,6 @@ describe('<Projects />', () => {
   afterEach(() => {
     jest.clearAllMocks();
   });
+
+  describe('Success', () => {})
 });
