@@ -62,6 +62,8 @@ describe('<Projects />', () => {
       ).toBeTruthy();
     });
 
-    it('Renders <Projects /> with no active value', () => {})
+    it('Renders <Projects /> with no active value', () => {
+      const { queryByTestId } = render(<Projects />);
+    })
   });
 });
