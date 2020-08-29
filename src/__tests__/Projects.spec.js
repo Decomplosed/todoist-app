@@ -37,6 +37,9 @@ describe('<Projects />', () => {
       expect(queryByTestId('project-action')).toBeTruthy();
 
       fireEvent.click(queryByTestId('project-action'));
+      expect(
+        queryByTestId('project-action-parent').classList.contains('active'),
+      ).toBeTruthy();
     });
   });
 });
