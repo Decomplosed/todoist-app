@@ -19,3 +19,9 @@ jest.mock('../context', () => ({
     ],
   })),
 }));
+
+describe('<Projects />', () => {
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+});
