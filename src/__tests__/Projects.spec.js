@@ -42,6 +42,8 @@ describe('<Projects />', () => {
       ).toBeTruthy();
     });
 
-    it('Renders <Projects /> adn selects an active project using onKeyDown', () => {})
+    it('Renders <Projects /> adn selects an active project using onKeyDown', () => {
+      const { queryByTestId } = render(<Projects />);
+    })
   });
 });
