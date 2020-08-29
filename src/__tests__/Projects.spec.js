@@ -4,4 +4,6 @@ import { Projects } from '../components/Projects';
 
 beforeEach(cleanup);
 
-jest.mock('../context', () => ({}));
+jest.mock('../context', () => ({
+  useSelectedProjectValue: jest.fn(() => ({}))
+}));
