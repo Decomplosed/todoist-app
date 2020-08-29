@@ -57,6 +57,9 @@ describe('<Projects />', () => {
         key: 'Enter',
         code: 13,
       });
+      expect(
+        queryByTestId('project-action-parent').classList.contains('active'),
+      ).toBeTruthy();
     });
   });
 });
