@@ -61,5 +61,7 @@ describe('<Projects />', () => {
         queryByTestId('project-action-parent').classList.contains('active'),
       ).toBeTruthy();
     });
+
+    it('Renders <Projects /> with no active value', () => {})
   });
 });
