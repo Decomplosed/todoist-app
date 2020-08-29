@@ -65,6 +65,11 @@ describe('<Projects />', () => {
     it('Renders <Projects /> with no active value', () => {
       const { queryByTestId } = render(<Projects activeValue='0' />);
       expect(queryByTestId('project-action')).toBeTruthy();
+
+      fireEvent.keyDown(queryByTestId('project-action'), {
+        key: 'a',
+        code: 65,
+      });
     });
   });
 });
