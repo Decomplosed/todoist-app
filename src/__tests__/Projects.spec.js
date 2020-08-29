@@ -31,6 +31,8 @@ describe('<Projects />', () => {
       expect(queryByTestId('project-action')).toBeTruthy();
     });
 
-    it('Renders <Projects /> adn selects an active project using onClick', () => {});
+    it('Renders <Projects /> adn selects an active project using onClick', () => {
+      const { queryByTestId } = render(<Projects />);
+    });
   });
 });
