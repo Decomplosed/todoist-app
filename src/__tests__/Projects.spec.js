@@ -53,7 +53,10 @@ describe('<Projects />', () => {
         queryByTestId('project-action-parent').classList.contains('active'),
       ).toBeFalsy();
 
-      fireEvent.keyDown(queryByTestId('project-action'));
+      fireEvent.keyDown(queryByTestId('project-action'), {
+        key: 'Enter',
+        code: 13,
+      });
     });
   });
 });
