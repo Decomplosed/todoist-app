@@ -32,7 +32,7 @@ describe('<Projects />', () => {
     });
 
     it('Renders <Projects /> adn selects an active project using onClick', () => {
-      const { queryByTestId } = render(<Projects />);
+      const { queryByTestId } = render(<Projects activeValue="1" />);
     });
   });
 });
