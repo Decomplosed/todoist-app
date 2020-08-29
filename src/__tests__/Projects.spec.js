@@ -26,6 +26,8 @@ describe('<Projects />', () => {
   });
 
   describe('Success', () => {
-    it('Renders <Projects />', () => {})
-  })
+    it('Renders <Projects />', () => {
+      const { queryByTestId } = render(<Projects />);
+    });
+  });
 });
