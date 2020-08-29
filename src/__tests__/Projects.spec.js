@@ -5,5 +5,7 @@ import { Projects } from '../components/Projects';
 beforeEach(cleanup);
 
 jest.mock('../context', () => ({
-  useSelectedProjectValue: jest.fn(() => ({}))
+  useSelectedProjectValue: jest.fn(() => ({
+    setSelectedProject: jest.fn(() => 'INBOX'),
+  })),
 }));
