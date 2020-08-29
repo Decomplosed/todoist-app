@@ -33,7 +33,6 @@ describe('<Projects />', () => {
 
     it('Renders <Projects /> adn selects an active project using onClick', () => {
       const { queryByTestId } = render(<Projects activeValue='1' />);
-
       expect(queryByTestId('project-action')).toBeTruthy();
 
       fireEvent.click(queryByTestId('project-action'));
@@ -45,6 +44,8 @@ describe('<Projects />', () => {
     it('Renders <Projects /> adn selects an active project using onKeyDown', () => {
       const { queryByTestId } = render(<Projects activeValue='0' />);
       expect(queryByTestId('project-action')).toBeTruthy();
+
+      fireEvent.keyDown(queryByTestId('project-action'))
     });
   });
 });
