@@ -52,6 +52,8 @@ describe('<Projects />', () => {
       expect(
         queryByTestId('project-action-parent').classList.contains('active'),
       ).toBeFalsy();
+
+      fireEvent.keyDown(queryByTestId('project-action'));
     });
   });
 });
