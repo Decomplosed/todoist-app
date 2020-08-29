@@ -41,5 +41,7 @@ describe('<Projects />', () => {
         queryByTestId('project-action-parent').classList.contains('active'),
       ).toBeTruthy();
     });
+
+    it('Renders <Projects /> adn selects an active project using onKeyDown', () => {})
   });
 });
