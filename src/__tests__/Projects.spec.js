@@ -63,7 +63,7 @@ describe('<Projects />', () => {
     });
 
     it('Renders <Projects /> with no active value', () => {
-      const { queryByTestId } = render(<Projects />);
+      const { queryByTestId } = render(<Projects activeValue="0" />);
     })
   });
 });
