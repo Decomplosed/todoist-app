@@ -54,6 +54,9 @@ describe('<IndividualProject />', () => {
       );
 
       fireEvent.click(queryByTestId('delete-project'));
+      expect(
+        getByText('Are you sure you want to delete this project?'),
+      ).toBeTruthy();
     });
   });
 });
