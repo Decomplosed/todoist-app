@@ -35,5 +35,12 @@ jest.mock('../context', () => ({
 }));
 
 describe('<IndividualProject />', () => {
+  const project = {
+    name: '🙌 THE OFFICE',
+    projectId: '1',
+    userId: 'Jx3X378u2QjdGeEQdasj',
+    docId: 'michael-scott',
+  };
+
   describe('Success', () => {});
 });
