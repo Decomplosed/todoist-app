@@ -8,8 +8,10 @@ jest.mock('../firebase', () => ({
   firebase: {
     firestore: jest.fn(() => ({
       collection: jest.fn(() => ({
-        doc: jest.fn(() => ({}))
-      }))
-    }))
-  }
+        doc: jest.fn(() => ({
+          delete: jest.fn(() => Promise.resolve('Never mock firebase!')),
+        })),
+      })),
+    })),
+  },
 }));
