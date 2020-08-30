@@ -70,6 +70,11 @@ describe('<IndividualProject />', () => {
         key: 'a',
         code: 65,
       });
+
+      fireEvent.keyDown(queryByTestId('delete-project'), {
+        key: 'Enter',
+        code: 13,
+      });
     });
   });
 });
