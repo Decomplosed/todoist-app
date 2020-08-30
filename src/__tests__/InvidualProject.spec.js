@@ -52,6 +52,8 @@ describe('<IndividualProject />', () => {
       const { queryByTestId, getByText } = render(
         <IndividualProject project={project} />,
       );
+
+      fireEvent.click(queryByTestId('delete-project'));
     });
   });
 });
