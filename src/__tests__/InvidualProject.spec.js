@@ -45,6 +45,7 @@ describe('<IndividualProject />', () => {
   describe('Success', () => {
     it('Renders the <IndividualProject />', () => {
       const { getByText } = render(<IndividualProject project={project} />);
+      expect(getByText('🙌 THE OFFICE')).toBeTruthy();
     });
   });
 });
