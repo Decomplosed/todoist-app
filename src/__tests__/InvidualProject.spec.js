@@ -75,6 +75,9 @@ describe('<IndividualProject />', () => {
         key: 'Enter',
         code: 13,
       });
+      expect(
+        getByText('Are you sure you want to delete this project?'),
+      ).toBeTruthy();
     });
   });
 });
