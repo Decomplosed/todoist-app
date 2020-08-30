@@ -47,5 +47,7 @@ describe('<IndividualProject />', () => {
       const { getByText } = render(<IndividualProject project={project} />);
       expect(getByText('🙌 THE OFFICE')).toBeTruthy();
     });
+
+    it('Renders the delete overlay and then deletes <IndividualProject /> using onClick', () => {})
   });
 });
