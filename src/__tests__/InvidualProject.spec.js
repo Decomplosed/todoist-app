@@ -42,5 +42,7 @@ describe('<IndividualProject />', () => {
     docId: 'michael-scott',
   };
 
-  describe('Success', () => {});
+  describe('Success', () => {
+    it('Renders the <IndividualProject />', () => {});
+  });
 });
