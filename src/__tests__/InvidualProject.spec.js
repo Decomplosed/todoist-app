@@ -21,5 +21,7 @@ jest.mock('../context', () => ({
   useSelectedProjectValue: jest.fn(() => ({
     setSelectedProject: jest.fn(() => 'INBOX'),
   })),
-  useProjectsValue: jest.fn(() => ({})),
+  useProjectsValue: jest.fn(() => ({
+    setProjects: jest.fn(),
+  })),
 }));
