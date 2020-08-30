@@ -65,6 +65,11 @@ describe('<IndividualProject />', () => {
       const { queryByTestId, getByText } = render(
         <IndividualProject project={project} />,
       );
+
+      fireEvent.keyDown(queryByTestId('delete-project'), {
+        key: 'a',
+        code: 65,
+      });
     });
   });
 });
