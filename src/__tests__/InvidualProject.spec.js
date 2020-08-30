@@ -10,6 +10,7 @@ jest.mock('../firebase', () => ({
       collection: jest.fn(() => ({
         doc: jest.fn(() => ({
           delete: jest.fn(() => Promise.resolve('Never mock firebase!')),
+          update: jest.fn(),
         })),
       })),
     })),
