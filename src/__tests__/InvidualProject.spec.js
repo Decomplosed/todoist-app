@@ -4,4 +4,8 @@ import { IndividualProject } from '../components/IndividualProject';
 
 beforeEach(cleanup);
 
-jest.mock('../context', () => ({}));
+jest.mock('../firebase', () => ({
+  firebase: {
+    firestore: jest.fn(() => ({}))
+  }
+}));
