@@ -61,6 +61,10 @@ describe('<IndividualProject />', () => {
       fireEvent.click(getByText('Delete'));
     });
 
-    it('Renders the delete overlay and then deletes <IndividualProject /> using onClick', () => {})
+    it('Renders the delete overlay and then deletes <IndividualProject /> using onClick', () => {
+      const { queryByTestId, getByText } = render(
+        <IndividualProject project={project} />,
+      );
+    });
   });
 });
