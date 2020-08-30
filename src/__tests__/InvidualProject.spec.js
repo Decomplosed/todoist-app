@@ -78,6 +78,8 @@ describe('<IndividualProject />', () => {
       expect(
         getByText('Are you sure you want to delete this project?'),
       ).toBeTruthy();
+
+      fireEvent.click(getByText('Delete'));
     });
   });
 });
