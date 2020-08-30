@@ -44,7 +44,7 @@ describe('<IndividualProject />', () => {
 
   describe('Success', () => {
     it('Renders the <IndividualProject />', () => {
-      const { getByText } = render(<IndividualProject />);
+      const { getByText } = render(<IndividualProject project={project} />);
     });
   });
 });
