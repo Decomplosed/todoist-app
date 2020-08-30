@@ -16,3 +16,5 @@ jest.mock('../firebase', () => ({
     })),
   },
 }));
+
+jest.mock('../context', () => ({}));
