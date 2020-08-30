@@ -33,3 +33,5 @@ jest.mock('../context', () => ({
     ],
   })),
 }));
+
+describe('<IndividualProject />', () => {})
