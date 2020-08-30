@@ -43,6 +43,8 @@ describe('<IndividualProject />', () => {
   };
 
   describe('Success', () => {
-    it('Renders the <IndividualProject />', () => {});
+    it('Renders the <IndividualProject />', () => {
+      const { getByText } = render(<IndividualProject />);
+    });
   });
 });
