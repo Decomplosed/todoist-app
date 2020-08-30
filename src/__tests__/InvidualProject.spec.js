@@ -6,6 +6,10 @@ beforeEach(cleanup);
 
 jest.mock('../firebase', () => ({
   firebase: {
-    firestore: jest.fn(() => ({}))
+    firestore: jest.fn(() => ({
+      collection: jest.fn(() => ({
+
+      }))
+    }))
   }
 }));
