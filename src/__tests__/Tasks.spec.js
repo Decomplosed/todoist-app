@@ -72,6 +72,7 @@ describe('<Tasks />', () => {
 
       const { queryByTestId } = render(<Tasks />);
       expect(queryByTestId('tasks')).toBeTruthy();
+      expect(queryByTestId('project-name').textContent).toBe('Inbox');
     });
   });
 });
