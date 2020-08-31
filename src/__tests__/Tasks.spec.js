@@ -16,25 +16,25 @@ jest.mock('../context', () => ({
       {
         name: '🚀 DAILY',
         projectId: '2',
-        userId: 'jlIFXIwyAL3tzHMtzRbw',
+        userId: 'Jx3X378u2QjdGeEQdasj',
         docId: 'daily-office',
       },
       {
         name: '🎯 FUTURE',
         projectId: '3',
-        userId: 'jlIFXIwyAL3tzHMtzRbw',
+        userId: 'Jx3X378u2QjdGeEQdasj',
         docId: 'wake-up',
       },
       {
         name: '📚 WORDS',
         projectId: '4',
-        userId: 'jlIFXIwyAL3tzHMtzRbw',
+        userId: 'Jx3X378u2QjdGeEQdasj',
         docId: 'arcade-fire',
       },
       {
         name: '🎵 MUSIC',
         projectId: '5',
-        userId: 'jlIFXIwyAL3tzHMtzRbw',
+        userId: 'Jx3X378u2QjdGeEQdasj',
         docId: 'bella-ciao',
       },
     ],
@@ -43,6 +43,15 @@ jest.mock('../context', () => ({
 
 jest.mock('../hooks', () => ({
   useTasks: () => ({
-    tasks: [],
+    tasks: [
+      {
+        id: 'mx2taaXpF38vYqMGbVtY',
+        archived: false,
+        date: '21/07/2019',
+        projectId: '1',
+        task: "What is love? Baby don't hurt me, don't hurt me... No more!",
+        userId: 'Jx3X378u2QjdGeEQdasj',
+      },
+    ],
   }),
 }));
