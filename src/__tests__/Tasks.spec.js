@@ -67,6 +67,7 @@ describe('<Tasks />', () => {
     it('Renders <Tasks /> component', () => {
       useSelectedProjectValue.mockImplementation(() => ({
         setSelectedProject: jest.fn(() => 'INBOX'),
+        selectedProject: 'INBOX',
       }));
     });
   });
