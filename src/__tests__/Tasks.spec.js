@@ -5,4 +5,5 @@ import { useSelectedProjectValue } from '../context';
 
 jest.mock('../context', () => ({
   useSelectedProjectValue: jest.fn(),
+  useProjectsValue: jest.fn(() => ({})),
 }));
