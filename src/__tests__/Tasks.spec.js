@@ -19,6 +19,12 @@ jest.mock('../context', () => ({
         userId: 'jlIFXIwyAL3tzHMtzRbw',
         docId: 'daily-office',
       },
+      {
+        name: '🎯 FUTURE',
+        projectId: '3',
+        userId: 'jlIFXIwyAL3tzHMtzRbw',
+        docId: 'wake-up',
+      },
     ],
   })),
 }));
