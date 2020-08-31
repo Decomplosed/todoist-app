@@ -69,6 +69,8 @@ describe('<Tasks />', () => {
         setSelectedProject: jest.fn(() => 'INBOX'),
         selectedProject: 'INBOX',
       }));
+
+      const { queryByTestId } = render(<Tasks />);
     });
   });
 });
