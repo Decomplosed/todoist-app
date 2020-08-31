@@ -25,6 +25,12 @@ jest.mock('../context', () => ({
         userId: 'jlIFXIwyAL3tzHMtzRbw',
         docId: 'wake-up',
       },
+      {
+        name: '📚 WORDS',
+        projectId: '4',
+        userId: 'jlIFXIwyAL3tzHMtzRbw',
+        docId: 'arcade-fire',
+      },
     ],
   })),
 }));
