@@ -41,4 +41,6 @@ jest.mock('../context', () => ({
   })),
 }));
 
-jest.mock('../hooks', () => ({}))
+jest.mock('../hooks', () => ({
+  useTasks: () => ({}),
+}));
