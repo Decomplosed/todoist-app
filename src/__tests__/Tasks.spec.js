@@ -13,6 +13,12 @@ jest.mock('../context', () => ({
         userId: 'Jx3X378u2QjdGeEQdasj',
         docId: 'michael-scott',
       },
+      {
+        name: '🚀 DAILY',
+        projectId: '2',
+        userId: 'jlIFXIwyAL3tzHMtzRbw',
+        docId: 'daily-office',
+      },
     ],
   })),
 }));
