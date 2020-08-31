@@ -78,6 +78,7 @@ describe('<Tasks />', () => {
     it('Renders a <Tasks /> component with a project title', () => {
       useSelectedProjectValue.mockImplementation(() => ({
         setSelectedProject: jest.fn(() => '1'),
+        selectedProject: '1',
       }));
     });
   });
