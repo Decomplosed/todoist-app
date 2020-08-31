@@ -57,3 +57,5 @@ jest.mock('../hooks', () => ({
 }));
 
 beforeEach(cleanup);
+
+describe('<Tasks />', () => {});
