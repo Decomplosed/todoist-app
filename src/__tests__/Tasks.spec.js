@@ -80,6 +80,8 @@ describe('<Tasks />', () => {
         setSelectedProject: jest.fn(() => '1'),
         selectedProject: '1',
       }));
+
+      const { queryByTestId } = render(<Tasks />);
     });
   });
 });
