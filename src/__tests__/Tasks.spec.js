@@ -63,5 +63,7 @@ describe('<Tasks />', () => {
     jest.clearAllMocks();
   });
 
-  describe('Success', () => {});
+  describe('Success', () => {
+    it('Renders <Tasks /> component', () => {});
+  });
 });
