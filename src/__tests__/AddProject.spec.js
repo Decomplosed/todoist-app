@@ -50,3 +50,5 @@ jest.mock('../firebase', () => ({
     })),
   },
 }));
+
+beforeEach(cleanup);
