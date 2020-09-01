@@ -89,6 +89,7 @@ describe('<Tasks />', () => {
     it('Renders a <Tasks /> component with a collated title', () => {
       useSelectedProjectValue.mockImplementation(() => ({
         setSelectedProject: jest.fn(() => 'INBOX'),
+        selectedProject: 'INBOX',
       }));
     });
   });
