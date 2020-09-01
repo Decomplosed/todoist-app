@@ -37,5 +37,6 @@ jest.mock('../context', () => ({
         docId: 'bella-ciao',
       },
     ],
+    setProjects: jest.fn(),
   })),
 }));
