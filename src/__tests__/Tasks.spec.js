@@ -86,6 +86,8 @@ describe('<Tasks />', () => {
       expect(queryByTestId('project-name').textContent).toBe('🙌 THE OFFICE');
     });
 
-    it('Renders a <Tasks /> component with a collated title', () => {});
+    it('Renders a <Tasks /> component with a collated title', () => {
+      useSelectedProjectValue.mockImplementation(() => ({}));
+    });
   });
 });
