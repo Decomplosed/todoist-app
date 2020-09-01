@@ -93,6 +93,7 @@ describe('<Tasks />', () => {
       }));
 
       const { queryByTestId } = render(<Tasks />);
+      expect(queryByTestId('tasks')).toBeTruthy();
     });
   });
 });
