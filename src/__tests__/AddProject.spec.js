@@ -40,3 +40,5 @@ jest.mock('../context', () => ({
     setProjects: jest.fn(),
   })),
 }));
+
+jest.mock('../firebase', () => ({}));
