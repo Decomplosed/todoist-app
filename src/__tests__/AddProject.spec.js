@@ -55,6 +55,8 @@ beforeEach(cleanup);
 
 describe('<AddProject />', () => {
   describe('Success', () => {
-    it('renders <AddProject />', () => {});
+    it('Renders <AddProject />', () => {
+      const { queryByTestId } = render(<AddProject />);
+    });
   });
 });
