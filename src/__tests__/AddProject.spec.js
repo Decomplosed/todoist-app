@@ -53,4 +53,6 @@ jest.mock('../firebase', () => ({
 
 beforeEach(cleanup);
 
-describe('<AddProject />', () => {});
+describe('<AddProject />', () => {
+  describe('Success', () => {});
+});
