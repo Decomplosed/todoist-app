@@ -57,6 +57,7 @@ describe('<AddProject />', () => {
   describe('Success', () => {
     it('Renders <AddProject />', () => {
       const { queryByTestId } = render(<AddProject />);
+      expect(queryByTestId('add-project')).toBeTruthy();
     });
   });
 });
