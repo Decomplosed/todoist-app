@@ -60,6 +60,8 @@ describe('<AddProject />', () => {
       expect(queryByTestId('add-project')).toBeTruthy();
     });
 
-    it('Renders <AddProject /> and adds a project using onClick', () => {})
+    it('Renders <AddProject /> and adds a project using onClick', () => {
+      const { queryByTestId } = render(<AddProject />);
+    });
   });
 });
