@@ -41,4 +41,8 @@ jest.mock('../context', () => ({
   })),
 }));
 
-jest.mock('../firebase', () => ({}));
+jest.mock('../firebase', () => ({
+  firebase: {
+    firestore: jest.fn(() => ({})),
+  },
+}));
