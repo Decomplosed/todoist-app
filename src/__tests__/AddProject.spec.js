@@ -30,6 +30,12 @@ jest.mock('../context', () => ({
         userId: 'jlIFXIwyAL3tzHMtzRbw',
         docId: 'arcade-fire',
       },
+      {
+        name: '🎵 MUSIC',
+        projectId: '5',
+        userId: 'jlIFXIwyAL3tzHMtzRbw',
+        docId: 'bella-ciao',
+      },
     ],
   })),
 }));
