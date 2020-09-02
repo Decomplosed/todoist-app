@@ -101,6 +101,7 @@ describe('<AddProject />', () => {
         key: 'Enter',
         code: 13,
       });
+      expect(queryByTestId('add-project')).toBeTruthy();
     });
   });
 });
