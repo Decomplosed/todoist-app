@@ -84,6 +84,8 @@ describe('<AddProject />', () => {
       expect(queryByTestId('add-project-inner')).toBeFalsy();
     });
 
-    it('Hides the project overlay when cancelled using onKeyDown', () => {});
+    it('Hides the project overlay when cancelled using onKeyDown', () => {
+      const { queryByTestId, getByText } = render(<AddProject />);
+    });
   });
 });
