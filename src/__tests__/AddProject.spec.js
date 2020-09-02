@@ -64,7 +64,9 @@ describe('<AddProject />', () => {
       const { queryByTestId } = render(<AddProject shouldShow />);
       expect(queryByTestId('add-project')).toBeTruthy();
 
-      fireEvent.change(queryByTestId('project-name'), {})
+      fireEvent.change(queryByTestId('project-name'), {{
+        target: { value: 'Best project in the world!' },
+      }})
     });
   });
 });
