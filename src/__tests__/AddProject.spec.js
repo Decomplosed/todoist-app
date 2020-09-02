@@ -80,6 +80,7 @@ describe('<AddProject />', () => {
       expect(queryByTestId('add-project-inner')).toBeTruthy();
 
       fireEvent.click(getByText('Cancel'));
+      expect(queryByTestId('add-project')).toBeTruthy();
     });
   });
 });
