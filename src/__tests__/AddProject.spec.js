@@ -113,6 +113,7 @@ describe('<AddProject />', () => {
 
       fireEvent.click(queryByTestId('add-project-action'));
       expect(queryByTestId('add-project')).toBeTruthy();
+      expect(queryByTestId('add-project-inner')).toBeFalsy();
     });
   });
 });
