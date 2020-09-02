@@ -96,6 +96,8 @@ describe('<AddProject />', () => {
       });
       expect(queryByTestId('add-project')).toBeTruthy();
       expect(queryByTestId('add-project-inner')).toBeTruthy();
+
+      fireEvent.keyDown(getByText('Cancel'))
     });
   });
 });
