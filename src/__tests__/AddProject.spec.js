@@ -107,6 +107,8 @@ describe('<AddProject />', () => {
 
     it('Hides the project overlay using onClick singular and reverse action', () => {
       const { queryByTestId } = render(<AddProject shouldShow />);
+
+      expect(queryByTestId('add-project')).toBeTruthy();
     });
   });
 });
