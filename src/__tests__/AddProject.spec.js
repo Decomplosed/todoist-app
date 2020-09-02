@@ -109,6 +109,7 @@ describe('<AddProject />', () => {
       const { queryByTestId } = render(<AddProject shouldShow />);
 
       expect(queryByTestId('add-project')).toBeTruthy();
+      expect(queryByTestId('add-project-inner')).toBeTruthy();
     });
   });
 });
