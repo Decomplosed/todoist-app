@@ -73,6 +73,8 @@ describe('<AddProject />', () => {
       fireEvent.click(queryByTestId('add-project-submit'));
     });
 
-    it('Hides the project overlay when cancelled using onClick', () => {});
+    it('Hides the project overlay when cancelled using onClick', () => {
+      const { queryByTestId, getByText } = render(<AddProject />);
+    });
   });
 });
