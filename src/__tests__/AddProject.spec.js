@@ -70,6 +70,7 @@ describe('<AddProject />', () => {
       expect(queryByTestId('project-name').value).toBe(
         'Best project in the world!',
       );
+      fireEvent.click(queryByTestId('add-project-submit'));
     });
   });
 });
