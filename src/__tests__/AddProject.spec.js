@@ -94,6 +94,7 @@ describe('<AddProject />', () => {
         key: 'a',
         code: 65,
       });
+      expect(queryByTestId('add-project')).toBeTruthy();
     });
   });
 });
