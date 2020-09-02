@@ -75,8 +75,9 @@ describe('<AddProject />', () => {
 
     it('Hides the project overlay when cancelled using onClick', () => {
       const { queryByTestId, getByText } = render(<AddProject shouldShow />);
-      
+
       expect(queryByTestId('add-project')).toBeTruthy();
+      expect(queryByTestId('add-project-inner')).toBeTruthy();
     });
   });
 });
