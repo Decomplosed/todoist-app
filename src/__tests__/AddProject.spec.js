@@ -85,7 +85,7 @@ describe('<AddProject />', () => {
     });
 
     it('Hides the project overlay when cancelled using onKeyDown', () => {
-      const { queryByTestId, getByText } = render(<AddProject />);
+      const { queryByTestId, getByText } = render(<AddProject shouldShow />);
     });
   });
 });
