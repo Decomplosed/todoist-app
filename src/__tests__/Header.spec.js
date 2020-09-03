@@ -22,6 +22,8 @@ describe('<Header />', () => {
       const { queryByTestId } = render(
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />,
       );
+
+      expect(queryByTestId('header')).toBeTruthy();
     });
   });
 });
