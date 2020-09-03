@@ -11,6 +11,8 @@ beforeEach(cleanup);
 
 describe('<Header />', () => {
   describe('Success', () => {
-    it('Renders the <Header /> component', () => {});
+    it('Renders the <Header /> component', () => {
+      const { queryByTestId } = render(<Header />);
+    });
   });
 });
