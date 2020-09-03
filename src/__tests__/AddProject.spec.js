@@ -127,6 +127,7 @@ describe('<AddProject />', () => {
         code: 65,
       });
       expect(queryByTestId('add-project')).toBeTruthy();
+      expect(queryByTestId('add-project-inner')).toBeTruthy();
     });
   });
 });
