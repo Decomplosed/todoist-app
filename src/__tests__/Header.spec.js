@@ -29,6 +29,8 @@ describe('<Header />', () => {
       expect(setDarkMode).toHaveBeenCalledWith(true);
     });
 
-    it('Renders the <Header /> component and set quick add task to true using onClick', () => {});
+    it('Renders the <Header /> component and set quick add task to true using onClick', () => {
+      const darkMode = false;
+    });
   });
 });
