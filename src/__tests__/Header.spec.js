@@ -19,6 +19,7 @@ describe('<Header />', () => {
     it('Renders the <Header /> component and activates dark mode using onClick.', () => {
       const darkMode = false;
       const setDarkMode = jest.fn(() => !darkMode);
+      const { queryByTestId } = render(<Header />);
     });
   });
 });
