@@ -8,3 +8,5 @@ jest.mock('../context', () => ({
 }));
 
 beforeEach(cleanup);
+
+describe('<Header />', () => {});
