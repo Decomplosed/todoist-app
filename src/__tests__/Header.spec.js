@@ -28,5 +28,7 @@ describe('<Header />', () => {
       fireEvent.click(queryByTestId('dark-mode-action'));
       expect(setDarkMode).toHaveBeenCalledWith(true);
     });
+
+    it('Renders the <Header /> component and set quick add task to true using onClick', () => {});
   });
 });
