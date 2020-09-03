@@ -9,4 +9,6 @@ jest.mock('../context', () => ({
 
 beforeEach(cleanup);
 
-describe('<Header />', () => {});
+describe('<Header />', () => {
+  describe('Success', () => {});
+});
