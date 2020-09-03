@@ -16,6 +16,8 @@ describe('<Header />', () => {
       expect(queryByTestId('header')).toBeTruthy();
     });
 
-    it('Renders the <Header /> component and activates dark mode using onClick.', () => {});
+    it('Renders the <Header /> component and activates dark mode using onClick.', () => {
+      const darkMode = false;
+    });
   });
 });
