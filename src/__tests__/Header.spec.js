@@ -26,6 +26,7 @@ describe('<Header />', () => {
       expect(queryByTestId('header')).toBeTruthy();
 
       fireEvent.click(queryByTestId('dark-mode-action'));
+      expect(setDarkMode).toHaveBeenCalledWith(true);
     });
   });
 });
