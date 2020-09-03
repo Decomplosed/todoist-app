@@ -13,6 +13,7 @@ describe('<Header />', () => {
   describe('Success', () => {
     it('Renders the <Header /> component', () => {
       const { queryByTestId } = render(<Header />);
+      expect(queryByTestId('header')).toBeTruthy();
     });
   });
 });
