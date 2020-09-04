@@ -37,7 +37,10 @@ describe('<Sidebar />', () => {
         key: 'a',
         code: 65,
       });
-      fireEvent.keyDown(queryByTestId('inbox-action'));
+      fireEvent.keyDown(queryByTestId('inbox-action'), {
+        key: 'Enter',
+        code: 13,
+      });
     });
   });
 });
