@@ -33,6 +33,7 @@ describe('<Sidebar />', () => {
       expect(queryByTestId('sidebar')).toBeTruthy();
 
       fireEvent.click(queryByTestId('inbox-action'));
+      fireEvent.keyDown(queryByTestId('inbox-action'));
     });
   });
 });
