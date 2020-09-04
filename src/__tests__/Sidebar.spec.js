@@ -21,4 +21,6 @@ jest.mock('../context', () => ({
   })),
 }));
 
-describe('<Sidebar />', () => {});
+describe('<Sidebar />', () => {
+  describe('Success', () => {});
+});
