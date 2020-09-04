@@ -41,6 +41,8 @@ describe('<Sidebar />', () => {
         key: 'Enter',
         code: 13,
       });
+
+      expect(queryByTestId('inbox').classList.contains('active')).toBeTruthy();
     });
   });
 });
