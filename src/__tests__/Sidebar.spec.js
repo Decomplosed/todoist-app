@@ -10,5 +10,6 @@ jest.mock('../context', () => ({
   })),
   useProjectsValue: jest.fn(() => ({
     setProjects: jest.fn(),
+    projects: [],
   })),
 }));
