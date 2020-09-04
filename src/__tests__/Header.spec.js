@@ -32,6 +32,8 @@ describe('<Header />', () => {
     it('Renders the <Header /> component and set quick add task to true using onClick', () => {
       const darkMode = false;
       const { queryByTestId } = render(<Header darkMode={darkMode} />);
+
+      expect(queryByTestId('header')).toBeTruthy();
     });
   });
 });
