@@ -5,5 +5,7 @@ import { Sidebar } from '../components/layout/Sidebar';
 beforeEach(cleanup);
 
 jest.mock('../context', () => ({
-  useSelectedProjectValue: jest.fn(() => ({})),
+  useSelectedProjectValue: jest.fn(() => ({
+    setSelectedProject: jest.fn(() => 'INBOX'),
+  })),
 }));
