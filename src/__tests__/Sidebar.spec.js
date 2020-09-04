@@ -50,6 +50,8 @@ describe('<Sidebar />', () => {
     it('Changes the active project to today in collated tasks', () => {
       const { queryByTestId } = render(<Sidebar />);
       expect(queryByTestId('sidebar')).toBeTruthy();
+
+      fireEvent.click(queryByTestId('today-action'));
     });
   });
 });
