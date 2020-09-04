@@ -23,6 +23,8 @@ jest.mock('../context', () => ({
 
 describe('<Sidebar />', () => {
   describe('Success', () => {
-    it('Renders the <Sidebar />', () => {});
+    it('Renders the <Sidebar />', () => {
+      const { queryByTestId } = render(<Sidebar />);
+    });
   });
 });
