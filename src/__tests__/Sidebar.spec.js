@@ -28,6 +28,8 @@ describe('<Sidebar />', () => {
       expect(queryByTestId('sidebar')).toBeTruthy();
     });
 
-    it('Changes the active project to inbox in collated tasks', () => {});
+    it('Changes the active project to inbox in collated tasks', () => {
+      const { queryByTestId } = render(<Sidebar />);
+    });
   });
 });
