@@ -20,3 +20,5 @@ jest.mock('../context', () => ({
     ],
   })),
 }));
+
+describe('<Sidebar />', () => {});
