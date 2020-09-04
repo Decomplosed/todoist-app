@@ -52,6 +52,7 @@ describe('<Sidebar />', () => {
       expect(queryByTestId('sidebar')).toBeTruthy();
 
       fireEvent.click(queryByTestId('today-action'));
+      fireEvent.click(queryByTestId('inbox-action'));
     });
   });
 });
