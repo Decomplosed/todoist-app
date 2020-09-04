@@ -27,5 +27,7 @@ describe('<Sidebar />', () => {
       const { queryByTestId } = render(<Sidebar />);
       expect(queryByTestId('sidebar')).toBeTruthy();
     });
+
+    it('Changes the active project to inbox in collated tasks', () => {});
   });
 });
