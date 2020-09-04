@@ -4,4 +4,6 @@ import { Sidebar } from '../components/layout/Sidebar';
 
 beforeEach(cleanup);
 
-jest.mock('../context', () => ({}));
+jest.mock('../context', () => ({
+  useSelectedProjectValue: jest.fn(() => ({})),
+}));
