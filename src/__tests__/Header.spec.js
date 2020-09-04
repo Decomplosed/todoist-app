@@ -34,6 +34,8 @@ describe('<Header />', () => {
       const { queryByTestId } = render(<Header darkMode={darkMode} />);
 
       expect(queryByTestId('header')).toBeTruthy();
+
+      fireEvent.click(queryByTestId('quick-add-task-action'));
     });
   });
 });
