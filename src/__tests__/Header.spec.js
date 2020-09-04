@@ -36,6 +36,7 @@ describe('<Header />', () => {
       expect(queryByTestId('header')).toBeTruthy();
 
       fireEvent.click(queryByTestId('quick-add-task-action'));
+      expect(queryByTestId('add-task-main')).toBeTruthy();
     });
   });
 });
