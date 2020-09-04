@@ -30,8 +30,9 @@ describe('<Sidebar />', () => {
 
     it('Changes the active project to inbox in collated tasks', () => {
       const { queryByTestId } = render(<Sidebar />);
-
       expect(queryByTestId('sidebar')).toBeTruthy();
+
+      fireEvent.click(queryByTestId('inbox-action'));
     });
   });
 });
