@@ -25,6 +25,7 @@ describe('<Sidebar />', () => {
   describe('Success', () => {
     it('Renders the <Sidebar />', () => {
       const { queryByTestId } = render(<Sidebar />);
+      expect(queryByTestId('sidebar')).toBeTruthy();
     });
   });
 });
