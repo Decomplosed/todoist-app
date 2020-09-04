@@ -37,6 +37,7 @@ describe('<Sidebar />', () => {
         key: 'a',
         code: 65,
       });
+      fireEvent.keyDown(queryByTestId('inbox-action'));
     });
   });
 });
