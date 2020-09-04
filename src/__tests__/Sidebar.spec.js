@@ -47,6 +47,8 @@ describe('<Sidebar />', () => {
       expect(queryByTestId('next_7').classList.contains('active')).toBeFalsy();
     });
 
-    it('Changes the active project to today in collated tasks', () => {});
+    it('Changes the active project to today in collated tasks', () => {
+      const { queryByTestId } = render(<Sidebar />);
+    });
   });
 });
