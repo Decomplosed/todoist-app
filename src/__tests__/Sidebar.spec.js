@@ -43,6 +43,7 @@ describe('<Sidebar />', () => {
       });
 
       expect(queryByTestId('inbox').classList.contains('active')).toBeTruthy();
+      expect(queryByTestId('today').classList.contains('active')).toBeFalsy();
     });
   });
 });
