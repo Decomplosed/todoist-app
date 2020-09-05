@@ -78,6 +78,7 @@ describe('<Sidebar />', () => {
 
       fireEvent.click(queryByTestId('next_7-action'));
       fireEvent.click(queryByTestId('inbox-action'));
+      fireEvent.keyDown(queryByTestId('next_7-action'));
     });
   });
 });
