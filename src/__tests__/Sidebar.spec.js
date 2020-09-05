@@ -71,5 +71,7 @@ describe('<Sidebar />', () => {
       expect(queryByTestId('inbox').classList.contains('active')).toBeFalsy();
       expect(queryByTestId('next_7').classList.contains('active')).toBeFalsy();
     });
+
+    it('Changes the active project to next_7 in collated tasks', () => {});
   });
 });
