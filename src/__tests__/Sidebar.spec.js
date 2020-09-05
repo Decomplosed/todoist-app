@@ -91,6 +91,8 @@ describe('<Sidebar />', () => {
         key: 'Enter',
         code: 13,
       });
+
+      expect(queryByTestId('next_7').classList.contains('active')).toBeTruthy();
     });
   });
 });
