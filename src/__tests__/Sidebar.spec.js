@@ -57,6 +57,8 @@ describe('<Sidebar />', () => {
         key: 'a',
         code: 65,
       });
+
+      expect(queryByTestId('today').classList.contains('active')).toBeFalsy();
     });
   });
 });
