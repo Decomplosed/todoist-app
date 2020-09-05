@@ -53,7 +53,10 @@ describe('<Sidebar />', () => {
 
       fireEvent.click(queryByTestId('today-action'));
       fireEvent.click(queryByTestId('inbox-action'));
-      fireEvent.keyDown(queryByTestId('today-action')
+      fireEvent.keyDown(queryByTestId('today-action'), {
+        key: 'a',
+        code: 65,
+      });
     });
   });
 });
