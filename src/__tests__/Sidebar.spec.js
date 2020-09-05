@@ -66,6 +66,8 @@ describe('<Sidebar />', () => {
         key: 'Enter',
         code: 13,
       });
+
+      expect(queryByTestId('today').classList.contains('active')).toBeTruthy();
     });
   });
 });
