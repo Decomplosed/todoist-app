@@ -69,6 +69,7 @@ describe('<Sidebar />', () => {
 
       expect(queryByTestId('today').classList.contains('active')).toBeTruthy();
       expect(queryByTestId('inbox').classList.contains('active')).toBeFalsy();
+      expect(queryByTestId('next_7').classList.contains('active')).toBeFalsy();
     });
   });
 });
