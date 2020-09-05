@@ -109,7 +109,7 @@ describe('<Sidebar />', () => {
     });
 
     it('Hides and shows the sidebar projects using onKeyDown', () => {
-      const { queryByTestId } = render(<Sidebar />);
+      const { queryByTestId, queryByText } = render(<Sidebar />);
     });
   });
 });
