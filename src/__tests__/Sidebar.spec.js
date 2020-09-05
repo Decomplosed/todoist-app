@@ -108,6 +108,8 @@ describe('<Sidebar />', () => {
       expect(queryByText('Add Project')).toBeTruthy();
     });
 
-    it('Hides and shows the sidebar projects using onKeyDown', () => {});
+    it('Hides and shows the sidebar projects using onKeyDown', () => {
+      const { queryByTestId } = render(<Sidebar />);
+    });
   });
 });
