@@ -98,7 +98,7 @@ describe('<Sidebar />', () => {
     });
 
     it('Hides and shows the sidebar projects using onClick', () => {
-      const { queryByTestId, queryByText, getByText } = render(<Sidebar />);
+      const { queryByTestId } = render(<Sidebar />);
     });
   });
 });
