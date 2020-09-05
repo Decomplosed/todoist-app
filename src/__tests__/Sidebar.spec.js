@@ -107,5 +107,7 @@ describe('<Sidebar />', () => {
       fireEvent.click(getByText('Projects'));
       expect(queryByText('Add Project')).toBeTruthy();
     });
+
+    it('Hides and shows the sidebar projects using onKeyDown', () => {});
   });
 });
