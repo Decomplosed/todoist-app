@@ -96,5 +96,9 @@ describe('<Sidebar />', () => {
       expect(queryByTestId('today').classList.contains('active')).toBeFalsy();
       expect(queryByTestId('inbox').classList.contains('active')).toBeFalsy();
     });
+
+    it('Hides and shows the sidebar projects using onClick', () => {
+      const { queryByTestId, queryByText, getByText } = render(<Sidebar />);
+    });
   });
 });
