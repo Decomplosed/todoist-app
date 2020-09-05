@@ -74,6 +74,8 @@ describe('<Sidebar />', () => {
 
     it('Changes the active project to next_7 in collated tasks', () => {
       const { queryByTestId } = render(<Sidebar />);
+
+      expect(queryByTestId('sidebar')).toBeTruthy();
     });
   });
 });
