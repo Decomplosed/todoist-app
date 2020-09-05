@@ -87,7 +87,10 @@ describe('<Sidebar />', () => {
       expect(queryByTestId('today').classList.contains('active')).toBeFalsy();
       expect(queryByTestId('inbox').classList.contains('active')).toBeTruthy();
 
-      fireEvent.keyDown(queryByTestId('next_7-action'));
+      fireEvent.keyDown(queryByTestId('next_7-action'), {
+        key: 'Enter',
+        code: 13,
+      });
     });
   });
 });
