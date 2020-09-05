@@ -105,6 +105,7 @@ describe('<Sidebar />', () => {
       expect(queryByText('Add Project')).toBeFalsy();
 
       fireEvent.click(getByText('Projects'));
+      expect(queryByText('Add Project')).toBeTruthy();
     });
   });
 });
