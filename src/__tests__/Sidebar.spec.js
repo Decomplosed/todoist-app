@@ -112,7 +112,10 @@ describe('<Sidebar />', () => {
       const { queryByTestId, queryByText, getByText } = render(<Sidebar />);
       expect(queryByTestId('sidebar')).toBeTruthy();
 
-      fireEvent.keyDown(getByText('Projects'));
+      fireEvent.keyDown(getByText('Projects'), {
+        key: 'a',
+        code: 65,
+      });
     });
   });
 });
