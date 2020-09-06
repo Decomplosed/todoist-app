@@ -130,7 +130,10 @@ describe('<Sidebar />', () => {
       });
       expect(queryByText('Add Project')).toBeFalsy();
 
-      fireEvent.keyDown(getByText('Projects'));
+      fireEvent.keyDown(getByText('Projects'), {
+        key: 'Enter',
+        code: 13,
+      });
     });
   });
 });
