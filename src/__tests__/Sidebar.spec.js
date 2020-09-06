@@ -122,6 +122,7 @@ describe('<Sidebar />', () => {
         key: 'Enter',
         code: 13,
       });
+      expect(queryByText('Add Project')).toBeFalsy();
     });
   });
 });
