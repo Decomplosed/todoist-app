@@ -116,6 +116,7 @@ describe('<Sidebar />', () => {
         key: 'a',
         code: 65,
       });
+      expect(queryByText('Add Project')).toBeTruthy();
     });
   });
 });
