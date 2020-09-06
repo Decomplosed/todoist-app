@@ -110,6 +110,7 @@ describe('<Sidebar />', () => {
 
     it('Hides and shows the sidebar projects using onKeyDown', () => {
       const { queryByTestId, queryByText, getByText } = render(<Sidebar />);
+      expect(queryByTestId('sidebar')).toBeTruthy();
     });
   });
 });
